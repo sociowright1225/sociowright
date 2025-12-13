@@ -1,0 +1,36 @@
+import mongoose from "mongoose";
+
+const PortfolioSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    category: {
+      type: String,
+      required: true,
+      enum: ["Digital Marketing", "Interior Shoots", "Ad Films"],
+    },
+    thumbnail: {
+      type: String,
+      required: true,
+    },
+    gallery: {
+      type: [String],
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
+
+export default mongoose.models.Portfolio ||
+  mongoose.model("Portfolio", PortfolioSchema);

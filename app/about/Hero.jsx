@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="justify-center relative items-center flex flex-col pt-30">
-      <h1 className="text-7xl w-3xl max-lg:text-4xl font-serif py-2 max-lg:px-3 text-center">
+    <div className="justify-center relative items-center flex flex-col pt-24">
+      <h1 className="text-7xl w-full max-w-[800px] max-lg:text-4xl font-serif py-2 max-lg:px-3 text-center">
         Tezza empowers and ignites the artist within all of us.
       </h1>
       {/* Background Video */}

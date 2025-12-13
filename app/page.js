@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import ContactForm from "./pages/ContactForm";
 import Portfolio from "./pages/Portfolio";
 import VintageGallery from "./pages/VintageGallery";
+import FAQ from "./pages/FAQ";
+import AlwaysReady from "./pages/AlwaysReady";
 
 export default function page() {
   return (
@@ -14,7 +16,8 @@ export default function page() {
       <About />
       <Portfolio />
       <VintageGallery />
-      <ContactForm />
+      <AlwaysReady />
+      <FAQ />
     </div>
   );
 }

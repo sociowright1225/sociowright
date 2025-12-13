@@ -1,10 +1,12 @@
-import React from 'react'
-import Portfolio from './Portfolio'
+// app/portfolio/page.jsx
 
-export default function page() {
+
+import Portfolio from "./Portfolio";
+
+export default function PortfolioList() {
   return (
-    <div>
-      <Portfolio/>
+    <div className="">
+      <Portfolio />
     </div>
-  )
+  );
 }

@@ -1,5 +1,11 @@
 "use client";
 import { useState } from "react";
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  weight: "400",     // Bebas Neue Bold alag weight me nahi aata, sab 400 hi hota
+  subsets: ["latin"],
+});
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -26,9 +32,9 @@ export default function Navbar() {
         </button>
 
         {/* Center Logo */}
-        <div className="flex-1 flex justify-center">
-          <h1 className="text-4xl font-bold max-lg:text-2xl tracking-tight"> Socio Wright</h1>
-        </div>
+        <a href="/" className="flex-1 flex justify-center">
+          <h1 className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}> Socio Wright</h1>
+        </a>
 
         {/* Desktop Right */}
         <div className="hidden md:flex items-center gap-10 text-xs tracking-widest">
@@ -53,7 +59,7 @@ export default function Navbar() {
               CLOSE
             </button>
 
-            <h1 className="text-3xl font-extrabold tracking-tight">TEZZA</h1>
+         <h1 className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}> Socio Wright</h1>
           </div>
 
           {/* Main Menu Links */}
@@ -61,40 +67,19 @@ export default function Navbar() {
             <a href="/" onClick={() => setOpen(false)}>
               Home
             </a>
-            <a href="/shop" onClick={() => setOpen(false)}>
-              Shop
-            </a>
+            
             <a href="/about" onClick={() => setOpen(false)}>
               About Us
             </a>
-            <a href="/faq" onClick={() => setOpen(false)}>
-              FAQ
+            <a href="/portfolio" onClick={() => setOpen(false)}>
+              Portfolio
             </a>
             <a href="/contact" onClick={() => setOpen(false)}>
               Contact
             </a>
           </div>
 
-          {/* Bottom Section */}
-          <div className="mt-auto">
-            <div className="flex gap-10 text-xs tracking-widest mb-6">
-              <a href="#">INSTAGRAM</a>
-              <a href="#">TIK TOK</a>
-            </div>
-
-            {/* Country Selector */}
-            <select className="px-4 py-2 border border-black rounded-lg bg-white text-xs">
-              <option>INR</option>
-              <option>USD</option>
-              <option>EUR</option>
-            </select>
-
-            {/* Bottom Legal */}
-            <div className="flex gap-10 text-xs tracking-widest mt-6">
-              <a href="#">PRIVACY</a>
-              <a href="#">TERMS</a>
-            </div>
-          </div>
+          
         </div>
       )}
     </header>

@@ -2,110 +2,121 @@
 
 export default function AboutUs() {
   return (
-    <section className="w-full bg-[#f7f4ef] text-gray-900 px-6 md:px-14 py-20">
-      
-      {/* --- TOP SECTION --- */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-        
-        {/* Text */}
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Tezza finds, shares, and inspires the little things that make life more beautiful.
-          </h1>
-          <p className="text-sm leading-relaxed max-w-sm text-gray-600">
-            At TEZZA, our vision is to empower creativity. Through tools, inspiration, 
-            and community, we believe anyone can discover beauty in their art.
-          </p>
-        </div>
+    <div className="flex justify-center items-center">
+      <section className="w-full max-w-[1200px] bg-[#f7f4ef] text-gray-900 px-4 sm:px-8 md:px-14 pt-14 sm:pt-20">
 
-        {/* Image */}
-        <div className="rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://source.unsplash.com/random/800x900?people"
-            alt="Top about"
-            className="w-full h-[400px] object-cover"
-          />
+      {/* --- TOP SECTION --- */}
+      <div className="grid md:grid-cols-2 gap-10 sm:gap-12 items-center mb-16 sm:mb-20">
+        {/* Left Title */}
+        <h1 className="text-3xl sm:text-4xl md:text-4xl font-serif font-thin leading-snug">
+          Tezza finds, shares, and inspires the little things that make life
+          more beautiful.
+        </h1>
+
+        {/* Right Text */}
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-4">
+          <p className="text-base leading-relaxed text-gray-600 max-w-sm">
+            At TEZZA, our vision is to empower creativity. Through tools,
+            inspiration, and community, we believe anyone can discover beauty in
+            their art.
+          </p>
+          <p className="text-base leading-relaxed text-gray-600 max-w-sm">
+            At TEZZA, our vision is to empower creativity. Through tools,
+            inspiration, and community, we believe anyone can discover beauty in
+            their art.
+          </p>
         </div>
       </div>
 
       {/* --- MID SECTION GALLERY + TEXT --- */}
-      <div className="grid md:grid-cols-3 gap-12 mb-20 place-items-center">
-        
-        {/* Left Image */}
-        <div className="rounded-xl overflow-hidden shadow-md w-full">
+      <div
+        className="
+          grid 
+          grid-cols-1 
+          lg:grid-cols-2
+          gap-10 sm:gap-12 
+          mb-20
+        "
+      >
+        {/* LEFT IMAGES */}
+        <div className="flex flex-col gap-6 w-full">
           <img
-            src="https://source.unsplash.com/random/600x600?studio"
-            alt="Studio"
-            className="w-full h-\[320px\] object-cover"
-          />
-        </div>
-
-        {/* Center Text */}
-        <div className="text-sm leading-relaxed text-gray-700 max-w-xs md:max-w-none">
-          <p>
-            Creativity can come from everywhere. All it takes is a spark—a moment,
-            and a way to bring it to life. We exist for the creators making their
-            mark in this new era of inspiration.
-          </p>
-          <p className="mt-6">
-            These tools bring new possibilities, and Tezza brings what’s next.
-          </p>
-        </div>
-
-        {/* Right Image */}
-        <div className="rounded-xl overflow-hidden shadow-md w-full">
-          <img
-            src="https://source.unsplash.com/random/600x600?fashion"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1765459851/main-sample.png"
             alt="Creative Work"
-            className="w-full h-\[320px] object-cover"
+            className="w-full h-72 sm:h-[450px] md:h-[600px] lg:h-[700px] object-cover rounded-xl"
           />
-        </div>
-      </div>
 
-      {/* --- LOGO + TEXT SECTION --- */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-        
-        {/* Logo */}
-        <div className="flex justify-center md:justify-start">
           <img
-            src="https://source.unsplash.com/random/200x200?logo"
-            alt="Logo mark"
-            className="w-32 opacity-90"
-          />
-        </div>
-
-        {/* Text */}
-        <div className="text-sm leading-relaxed max-w-md text-gray-700">
-          <p>
-            Founded by creators and built for creators, Tezza continues to inspire
-            visual storytellers everywhere. We make tools that elevate expression
-            and encourage creativity without limits.
-          </p>
-        </div>
-      </div>
-
-      {/* --- BOTTOM SECTION --- */}
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        
-        {/* Image */}
-        <div className="rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://source.unsplash.com/random/900x900?portrait"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1765547385/Screenshot_2025-12-12_190942_lmfgg9.png"
             alt="Founders"
-            className="w-full h-[420px] object-cover"
+            className="w-full h-56 sm:h-[300px] md:h-[350px] lg:h-[420px] object-cover rounded-xl"
           />
         </div>
 
-        {/* Text */}
-        <div className="text-sm leading-relaxed max-w-md text-gray-700">
-          <p>
-            Female-founded, design-driven, and inspired by real stories—Tezza blends
-            lifestyle, creativity, and visual expression into a powerful platform 
-            for the modern creator.
-          </p>
+        {/* CENTER TEXT + RIGHT IMAGE */}
+        <div className="text-sm leading-relaxed text-gray-700 flex flex-col gap-10 max-w-xl mx-auto lg:max-w-none">
+
+          {/* Right Image */}
+          <div className="rounded-xl overflow-hidden shadow-md w-full">
+            <img
+              src="https://creative-garage.in/wp-content/uploads/2025/04/RD-SMM.webp"
+              alt="Creative Work"
+              className="w-full h-60 sm:h-72 md:h-80 object-cover"
+            />
+          </div>
+
+          {/* TEXT BLOCKS */}
+          <div className="flex flex-col gap-10 text-base">
+            {/* Paragraph Group 1 */}
+            <div className="space-y-6">
+              <p>
+                Creativity can come from everywhere. All it takes is a spark—a
+                moment, and a way to bring it to life. We exist for the creators
+                making their mark in this new era of inspiration.
+              </p>
+
+              <p>
+                These tools bring new possibilities, and Tezza brings what’s
+                next. Female-founded, design-driven, and inspired by real
+                stories—Tezza blends lifestyle, creativity, and visual
+                expression into a powerful platform for the modern creator.
+              </p>
+
+              <p>
+                These tools bring new possibilities, and Tezza brings what’s
+                next. Female-founded, design-driven, and inspired by real
+                stories—Tezza blends lifestyle, creativity, and visual
+                expression into a powerful platform for the modern creator.
+              </p>
+            </div>
+
+            {/* Paragraph Group 2 */}
+            <div className="space-y-6">
+              <p>
+                Creativity can come from everywhere. All it takes is a spark—a
+                moment, and a way to bring it to life. We exist for the creators
+                making their mark in this new era of inspiration.
+              </p>
+
+              <p>
+                These tools bring new possibilities, and Tezza brings what’s
+                next. Female-founded, design-driven, and inspired by real
+                stories—Tezza blends lifestyle, creativity, and visual
+                expression into a powerful platform for the modern creator.
+              </p>
+
+              <p>
+                These tools bring new possibilities, and Tezza brings what’s
+                next. Female-founded, design-driven, and inspired by real
+                stories—Tezza blends lifestyle, creativity, and visual
+                expression into a powerful platform for the modern creator.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
     </section>
+    </div>
   );
 }

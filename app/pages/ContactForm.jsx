@@ -103,7 +103,7 @@ export default function ContactForm() {
 
         <button
           disabled={loading}
-          className="w-full bg-red-900 text-white py-3 rounded-lg hover:bg-red-950 transition"
+          className="w-full bg-[#5D804B] hover:bg-[#466139] text-white py-3 rounded-lg transition"
         >
           {loading ? "Sending..." : "Submit"}
         </button>

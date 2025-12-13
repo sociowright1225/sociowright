@@ -12,9 +12,9 @@ export default function AboutSection() {
           Make your brand unforgettable.
         </h2>
 
-        <button className="mt-6 md:mt-0 px-6 py-2 bg-[#5F7D3A] text-white text-xl rounded-full tracking-wide hover:bg-[#4e682f] transition">
+        <a href="/contact" className="mt-6 md:mt-0 uppercase px-6 py-2 bg-[#5F7D3A] text-white text-base rounded-full tracking-wide hover:bg-[#4e682f] transition">
           Contact Us
-        </button>
+        </a>
       </div>
 
       {/* Main Content Box */}
@@ -33,20 +33,20 @@ export default function AboutSection() {
 
         {/* Right Text Block */}
         <div className="md:w-1/2 bg-[#EFE9DF] p-5 md:p-16 flex flex-col justify-center">
-          <h3 className="text-5xl max-lg:text-4xl font-serif mb-6">
+          <h3 className="text-5xl max-lg:text-3xl font-serif mb-6">
             Make your digital presence magic
           </h3>
 
-          <p className="text-md tracking-wider leading-relaxed mb-10 max-w-md">
+          <p className="text-md max-lg:text-base tracking-wider leading-relaxed mb-10 max-w-md">
             Our digital strategies are crafted to elevate your brand with clarity, 
             creativity, and precision. From social campaigns to high-converting funnels, 
             we bring together data-driven insight and modern design to help your brand 
             stand out—boldly, beautifully, and impactfully.
           </p>
 
-          <button className="px-6 py-2 border border-black rounded-full text-xl font-medium hover:bg-black hover:text-white transition w-fit">
+          <a href="/about" className="px-6 py-2 border border-black rounded-full text-xl font-medium hover:bg-black hover:text-white transition w-fit">
             About Us
-          </button>
+          </a>
         </div>
 
       </div>
