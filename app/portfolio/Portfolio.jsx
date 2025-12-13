@@ -135,7 +135,7 @@ export default function Portfolio() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 sm:px-6 py-2 rounded-full border text-sm sm:text-base transition-all ${
+              className={`px-4 sm:px-6 py-2 rounded-full border text-base max-lg:text-[10px] transition-all ${
                 activeCategory === category
                   ? "bg-black text-white border-black font-bold shadow-md"
                   : "border-gray-300 text-gray-700 hover:border-black hover:text-black"

@@ -13,13 +13,12 @@ export default function VintageGallery() {
   return (
     <div className="flex justify-center items-center">
       <section className="w-full max-w-[1300px] py-12 md:py-16 bg-[#fdfbf7]">
-        
         {/* Top Heading */}
         <div className="text-center max-w-3xl mx-auto px-4">
           <p className="tracking-wide text-[12px] sm:text-[13px] font-medium text-neutral-700 leading-relaxed">
-            DRAWING INSPIRATION FROM VINTAGE FILM, MAGAZINES, AND FASHION, 
-            THE TEZZA APP FEATURES PRESETS THAT TRANSPORT YOU BACK IN TIME TO 
-            CREATE INSTANT NOSTALGIA AND QUALITY CONTENT. TAG US IN YOUR PHOTOS 
+            DRAWING INSPIRATION FROM VINTAGE FILM, MAGAZINES, AND FASHION, THE
+            Socio Wright APP FEATURES PRESETS THAT TRANSPORT YOU BACK IN TIME TO
+            CREATE INSTANT NOSTALGIA AND QUALITY CONTENT. TAG US IN YOUR PHOTOS
             AND VIDEOS FOR A CHANCE TO BE FEATURED.
           </p>
         </div>
@@ -27,7 +26,6 @@ export default function VintageGallery() {
         {/* Scrollable Image Row */}
         <div className="mt-10 overflow-x-auto scrollbar-hide">
           <div className="flex items-center gap-4 sm:gap-6 px-4 sm:px-6">
-
             {images.map((src, i) => (
               <div
                 key={i}
@@ -64,10 +62,8 @@ export default function VintageGallery() {
                   {/* Instagram Icon */}
                   <FaInstagram className="text-white text-3xl drop-shadow-xl" />
                 </div>
-
               </div>
             ))}
-
           </div>
         </div>
       </section>
