@@ -1,18 +1,15 @@
 import React from 'react'
-import Hero from './Hero'
-import About from './About'
-import Testimonials from './Testimonials'
-import ContactForm from '../pages/ContactForm'
-import AlwaysReady from '../pages/AlwaysReady'
+import { Hero } from './Hero'
+
 
 export default function page() {
   return (
-    <div>
+    <div className='bg-[#F2F1EA]'>
       <Hero/>
-      <About/>
-      <Testimonials/>
+      {/* <About/>
+      <Testimonials/> */}
       {/* <ContactForm/> */}
-      <AlwaysReady/>
+      {/* <AlwaysReady/> */}
     </div>
   )
 }

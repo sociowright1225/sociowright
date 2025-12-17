@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
 
 const bebas = Bebas_Neue({
-  weight: "400",     // Bebas Neue Bold alag weight me nahi aata, sab 400 hi hota
+  weight: "400", // Bebas Neue Bold alag weight me nahi aata, sab 400 hi hota
   subsets: ["latin"],
 });
 
@@ -11,7 +11,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full py-6 fixed z-50 bg-transparent">
+    <header className="w-full py-6 fixed z-[999] bg-transparent">
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Desktop Left */}
         <div className="hidden md:flex items-center gap-10 text-xs tracking-widest">
@@ -32,8 +32,15 @@ export default function Navbar() {
         </button>
 
         {/* Center Logo */}
-        <a href="/" className="flex-1 flex justify-center">
-          <h1 className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}> Socio Wright</h1>
+        <a href="/" className="">
+          <div
+            className={`text-center items-end gap-20 justify-end leading-0 tracking-widest`}
+          >
+            {" "}
+            <h1 className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}>Socio Wright</h1>
+            <small>Do it the Wright way!</small>
+          </div>
+          
         </a>
 
         {/* Desktop Right */}
@@ -59,7 +66,12 @@ export default function Navbar() {
               CLOSE
             </button>
 
-         <h1 className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}> Socio Wright</h1>
+            <h1
+              className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}
+            >
+              {" "}
+              Socio Wright
+            </h1>
           </div>
 
           {/* Main Menu Links */}
@@ -67,7 +79,7 @@ export default function Navbar() {
             <a href="/" onClick={() => setOpen(false)}>
               Home
             </a>
-            
+
             <a href="/about" onClick={() => setOpen(false)}>
               About Us
             </a>
@@ -78,8 +90,6 @@ export default function Navbar() {
               Contact
             </a>
           </div>
-
-          
         </div>
       )}
     </header>

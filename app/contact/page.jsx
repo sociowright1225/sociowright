@@ -3,7 +3,7 @@ import ContactPage from './ContactPage'
 
 export default function page() {
   return (
-    <div>
+    <div className='bg-[#F2F1EA]'>
       <ContactPage/>
     </div>
   )

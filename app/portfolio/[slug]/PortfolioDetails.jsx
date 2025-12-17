@@ -1,218 +1,137 @@
 // app/portfolio/[slug]/PortfolioDetails.jsx
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import connectDB from "@/lib/mongodb";
+import Portfolio from "@/models/Portfolio";
 
-const blogData = {
-  "project1": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project2": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project3": {
-    project: "project3",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project4": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project5": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project6": {
-    project: "project3",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-   "project11": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project22": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project33": {
-    project: "project3",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project44": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project55": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project66": {
-    project: "project3",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-     "project111": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project222": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project333": {
-    project: "project3",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project444": {
-    project: "project1",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
-  "project555": {
-    project: "project2",
-    Category: "Digital Marketing",
-    date: "12-12-2025",
-  },
- 
+const isVideo = (url) => {
+  return /\.(mp4|webm|ogg|mov)$/i.test(url);
 };
 
-const images = [
-  "/img/work1.jpg",
-  "/img/work2.jpg",
-  "/img/work3.jpg",
-  "/img/work4.jpg",
-  "/img/work5.jpg",
-  "/img/work6.jpg",
-];
+export default async function PortfolioDetails({ params }) {
+  const { slug } = params;
 
-export default function PortfolioDetails({ slug }) {
-  const blog = blogData[slug];
+  await connectDB();
 
-  if (!blog) {
+  const project = await Portfolio.findOne({ slug }).lean();
+
+  if (!project) {
     return (
-      <div className="p-6">
-        <h1 className="text-2xl font-bold">Blog Not Found</h1>
-      </div>
+      <p className="pt-40 text-center text-gray-500">
+        Project not found
+      </p>
     );
   }
 
+  const {
+    title,
+    category,
+    thumbnail,
+    gallery = [],
+    date,
+  } = project;
+
   return (
-    <div className="w-full min-h-screen py-12 pt-28 px-4 sm:px-6 lg:px-12">
-      
+    <div className="w-full min-h-screen flex flex-col items-center py-12 pt-28 px-4 sm:px-6 lg:px-12 bg-[#F2F1EA]">
+
       {/* Breadcrumb + Title */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto w-full mb-6">
         <p className="text-gray-400 text-xs sm:text-sm mb-2">
-          Home / Portfolio / <span className="font-medium">{blog.project}</span>
+          Home / Portfolio / <span className="font-medium">{title}</span>
         </p>
 
-        <h1 className="text-3xl sm:text-4xl uppercase lg:text-5xl font-bold leading-tight">
-          {blog.project}{" "}
-          <span className="text-[#5D804B] ">
-            {blog.Category}
-          </span>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
+          {title}{" "}
+          <span className="text-[#5D804B]">{category}</span>
         </h1>
       </div>
 
-      {/* MAIN GRID */}
-      <div className="max-w-6xl mx-auto mt-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
+      {/* Hero Image */}
+      <section className="w-full max-w-6xl mb-16">
+        <div className="w-full h-[60vh] rounded-xl overflow-hidden">
+          <img
+            src={thumbnail}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
 
-        {/* LEFT SIDE DETAILS */}
-        <div className="space-y-8">
+      {/* Overview Section */}
+      <section className="w-full max-w-6xl mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
-          {/* Project Details Box */}
-          <div className="rounded-xl p-6 border border-gray-700">
-            <h3 className="bg-[#5D804B] text-white font-semibold py-2 px-4 rounded-md w-max text-sm sm:text-base">
-              Project Details
-            </h3>
-
-            <div className="mt-4 space-y-4 text-xs sm:text-sm">
-              <div>
-                <p className="text-gray-400">Project Name:</p>
-                <p className="font-semibold text-gray-900">{blog.project}</p>
-              </div>
-
-              <div>
-                <p className="text-gray-400">Category:</p>
-                <p className="font-semibold text-gray-900">{blog.Category}</p>
-              </div>
-
-              <div>
-                <p className="text-gray-400">Date:</p>
-                <p className="font-semibold text-gray-900">{blog.date}</p>
-              </div>
-
-              {/* Social Icons */}
-            <div className="pt-3">
-  <p className="text-gray-400 mb-2">Share:</p>
-
-  <div className="flex gap-4 text-xl">
-    <FaFacebookF className="cursor-pointer hover:text-blue-500 transition" />
-    <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
-    <FaLinkedin className="cursor-pointer hover:text-blue-800 transition" />
-    <FaXTwitter className="cursor-pointer hover:text-gray-700 transition" />
-  </div>
-</div>
-
-            </div>
+          {/* Left */}
+          <div>
+            <p className="text-sm tracking-widest text-gray-400 mb-6">
+              [ OVERVIEW ]
+            </p>
           </div>
 
-          {/* Contact Box */}
-          <div className="rounded-xl p-6 border border-gray-700">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="bg-[#5D804B] text-black w-12 h-12 rounded-lg flex items-center justify-center">
-                <i className="ri-mail-send-fill text-2xl"></i>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm sm:text-base">
-                We are always here to discuss with you
-              </p>
-            </div>
-
-            <p className="text-xs sm:text-sm text-gray-400 mb-3">
-              hello@creative.example
+          {/* Right */}
+          <div>
+            <p className="text-gray-600 leading-relaxed max-w-xl">
+              This project showcases creative work focused on visual storytelling,
+              branding consistency, and high-impact presentation tailored for the
+              client’s marketing goals.
             </p>
 
-            <button className="mt-2 bg-[#5D804B] hover:bg-[#466139] text-white px-5 py-2 rounded-lg text-sm sm:text-base transition">
-              Contact Us →
-            </button>
-          </div>
+            {/* Meta Info */}
+            <div className="mt-16 grid grid-cols-2 gap-x-12 gap-y-10">
+              <div>
+                <p className="text-sm text-gray-400 mb-2">Year</p>
+                <p className="font-semibold text-lg">
+                  {new Date(date).getFullYear()}
+                </p>
+              </div>
 
-        </div>
+              <div>
+                <p className="text-sm text-gray-400 mb-2">Category</p>
+                <p className="font-semibold text-lg">{category}</p>
+              </div>
 
-        {/* RIGHT SIDE - Image Gallery */}
-        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {images.map((img, i) => (
-            <div key={i} className="rounded-xl overflow-hidden shadow-lg">
-              <img
-                src={img}
-                alt="portfolio item"
-                className="
-                  w-full 
-                  h-48 sm:h-56 md:h-64 lg:h-72 
-                  object-cover 
-                  hover:scale-105 
-                  transition duration-300
-                "
-              />
+              <div>
+                <p className="text-sm text-gray-400 mb-2">Client</p>
+                <p className="font-semibold text-lg">{title}</p>
+              </div>
+
+              <div>
+                <p className="text-sm text-gray-400 mb-2">Platform</p>
+                <p className="font-semibold text-lg">Digital Media</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="w-full max-w-7xl">
+        <div className="flex flex-wrap justify-center gap-6">
+          {gallery.map((src, i) => (
+            src && (
+              <div
+                key={i}
+                className="rounded-xl overflow-hidden shadow-lg"
+              >
+                {isVideo(src) ? (
+                  <video
+                    src={src}
+                    controls
+                    muted
+                    className="w-full h-48 sm:h-56 md:h-64 lg:h-96 object-cover"
+                  />
+                ) : (
+                  <img
+                    src={src}
+                    alt={`${title} ${i + 1}`}
+                    className="w-full h-48 sm:h-56 md:h-64 lg:h-96 object-cover hover:scale-105 transition duration-300"
+                  />
+                )}
+              </div>
+            )
           ))}
         </div>
-
-      </div>
+      </section>
 
     </div>
   );

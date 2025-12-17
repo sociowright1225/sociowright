@@ -1,13 +1,62 @@
 import React from "react";
+import BlurText from "../components/buildKeyframes";
+import { Space_Grotesk } from "next/font/google";
+import ImageTrail from "../components/ImageTrail";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 
 export default function Hero() {
   return (
-    <div className="justify-center relative items-center flex-col pt-30 max-lg:pt-24">
-      <h1 className="text-7xl py-4  max-lg:text-4xl font-serif  max-lg:px-3 text-center">
-        Do it the Wright way! 
+    <div className="justify-center h-screen relative flex items-center flex-col max-lg:pt-24">
+      <div
+        style={{
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+          overflow: "hidden",
+        }}
+      >
+        <ImageTrail
+          items={[
+            "https://picsum.photos/id/287/300/300",
+            "https://picsum.photos/id/1001/300/300",
+            "https://picsum.photos/id/1025/300/300",
+            "https://picsum.photos/id/1026/300/300",
+            "https://picsum.photos/id/1027/300/300",
+            "https://picsum.photos/id/1028/300/300",
+            "https://picsum.photos/id/1029/300/300",
+            "https://picsum.photos/id/1030/300/300",
+            "https://picsum.photos/id/1026/300/300",
+            "https://picsum.photos/id/1027/300/300",
+            "https://picsum.photos/id/1028/300/300",
+          
+            // ...
+          ]}
+          variant={1}
+        />
+      </div>
+      <h1 className="">
+        <BlurText
+          text="Do it the Wright way!"
+          delay={250}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={console.log("Animation completed!")}
+          className={`space text-8xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
+        />
       </h1>
+      <p className="w-2xl mb-4 text-center">
+        Our digital strategies are crafted to elevate your brand with clarity,
+        creativity, and precision. From social campaigns to high-converting
+        funnels, we bring together data-driven insight and modern design to help
+        your brand stand out—boldly, beautifully, and impactfully.
+      </p>
       {/* Background Video */}
-      <video
+      {/* <video
         className="relative top-0 pt-5 left-0 w-full h-full object-cover max-lg:h-screen"
         autoPlay
         muted
@@ -19,10 +68,18 @@ export default function Hero() {
           type="video/mp4"
         />
        
-      </video>
-       <div className="absolute bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-10">
-        <button className="px-8 py-3 text-white hover:text-black rounded-full border border-white text-sm font-serif hover:bg-white/80 transition">
-        Contact Us Now
+      </video> */}
+      <div className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
+        <button
+          className="relative group px-8 py-3 bg-[#F2F1EA] text-black hover:text-white rounded-xl border
+         border-black text-sm font-serif overflow-hidden transition"
+        >
+          <span className="relative z-10">Contact Us Now</span>
+
+          <span
+            className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-xl bg-black 
+            transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
+          ></span>
         </button>
       </div>
     </div>

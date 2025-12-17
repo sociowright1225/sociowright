@@ -8,15 +8,18 @@ import Portfolio from "./pages/Portfolio";
 import VintageGallery from "./pages/VintageGallery";
 import FAQ from "./pages/FAQ";
 import AlwaysReady from "./pages/AlwaysReady";
+import StatsSection from "./pages/Stats";
 
 export default function page() {
   return (
-    <div>
+    <div className="bg-[#F2F1EA]">
       <Homepage />
       <About />
+      <StatsSection/>
       <Portfolio />
       <VintageGallery />
-      <AlwaysReady />
+      {/* <AlwaysReady /> */}
+      
       <FAQ />
     </div>
   );
