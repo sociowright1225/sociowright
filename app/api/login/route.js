@@ -8,7 +8,7 @@ import bcrypt from "bcryptjs";
 // MongoDB Connection Helper
 const connectDB = async () => {
   if (mongoose.connections[0].readyState) return;
-  await mongoose.connect(process.env.MONGODB_URI);
+  await mongoose.connect(process.env.MONGO_URI);
 };
 
 export async function POST(request) {
