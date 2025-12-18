@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full py-6 fixed z-[999] bg-transparent">
-      <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between max-lg:justify-center">
         {/* Desktop Left */}
         <div className="hidden md:flex items-center gap-10 text-xs tracking-widest">
           <a href="/" className="hover:opacity-60">
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-sm tracking-widest"
+          className="md:hidden max-lg:right-4 max-lg:absolute  text-sm tracking-widest"
           onClick={() => setOpen(true)}
         >
           MENU

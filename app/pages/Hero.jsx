@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function Hero() {
   return (
-    <div className="justify-center h-screen relative flex items-center flex-col max-lg:pt-24">
+    <div className="justify-center h-screen relative flex items-center flex-col max-lg:pt-14">
       <div
         style={{
           height: "100%",
@@ -33,42 +33,28 @@ export default function Hero() {
             "https://picsum.photos/id/1026/300/300",
             "https://picsum.photos/id/1027/300/300",
             "https://picsum.photos/id/1028/300/300",
-          
+
             // ...
           ]}
           variant={1}
         />
       </div>
-      <h1 className="">
+      <h1 className="flex justify-center items-center">
         <BlurText
-          text="Do it the Wright way!"
+          text="RAW REAL UNFILTERED"
           delay={250}
           animateBy="words"
           direction="top"
-          onAnimationComplete={console.log("Animation completed!")}
-          className={`space text-8xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
+          className={`space text-8xl max-lg:text-5xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
         />
       </h1>
-      <p className="w-2xl mb-4 text-center">
+      <p className="max-w-2xl mb-4 text-center">
         Our digital strategies are crafted to elevate your brand with clarity,
         creativity, and precision. From social campaigns to high-converting
         funnels, we bring together data-driven insight and modern design to help
         your brand stand out—boldly, beautifully, and impactfully.
       </p>
-      {/* Background Video */}
-      {/* <video
-        className="relative top-0 pt-5 left-0 w-full h-full object-cover max-lg:h-screen"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source
-          src="https://res.cloudinary.com/drpyepp9t/video/upload/v1744806848/samples/cld-sample-video.mp4"
-          type="video/mp4"
-        />
-       
-      </video> */}
+
       <div className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
         <button
           className="relative group px-8 py-3 bg-[#F2F1EA] text-black hover:text-white rounded-xl border

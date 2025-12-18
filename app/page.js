@@ -9,6 +9,7 @@ import VintageGallery from "./pages/VintageGallery";
 import FAQ from "./pages/FAQ";
 import AlwaysReady from "./pages/AlwaysReady";
 import StatsSection from "./pages/Stats";
+import Testimonials from "./pages/Testimonials";
 
 export default function page() {
   return (
@@ -19,7 +20,7 @@ export default function page() {
       <Portfolio />
       <VintageGallery />
       {/* <AlwaysReady /> */}
-      
+      <Testimonials/>
       <FAQ />
     </div>
   );

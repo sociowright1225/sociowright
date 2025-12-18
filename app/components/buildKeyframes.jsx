@@ -74,7 +74,7 @@ const BlurText = ({
   const times = Array.from({ length: stepCount }, (_, i) => (stepCount === 1 ? 0 : i / (stepCount - 1)));
 
   return (
-    <p ref={ref} className={className} style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <span ref={ref} className={className}>
       {elements.map((segment, index) => {
         const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots);
 
@@ -99,7 +99,7 @@ const BlurText = ({
           </motion.span>
         );
       })}
-    </p>
+    </span>
   );
 };
 
