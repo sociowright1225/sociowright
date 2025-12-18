@@ -43,7 +43,7 @@ export default function Portfolio() {
 
   if (loading) {
     return (
-      <p className="pt-40 text-center text-gray-500">
+      <p className="pt-40 h-screen text-center text-gray-500">
         Loading portfolio...
       </p>
     );
@@ -58,7 +58,7 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 pt-20">
+    <section className="flex flex-col  items-center justify-center px-4 sm:px-6 md:px-10 pt-20">
       <div className="w-full max-w-[1200px] text-black pt-10 pb-16">
         {/* Dynamic Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-10 text-gray-800">
@@ -83,7 +83,7 @@ export default function Portfolio() {
         </div>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 h-screen sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map((project) => (
             <Link
               key={project._id}

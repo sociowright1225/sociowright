@@ -5,7 +5,7 @@ export async function middleware(request) {
   const token = request.cookies.get("auth_token")?.value;
 
   if (!token) {
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/admin", request.url));
   }
 
   try {
@@ -18,10 +18,10 @@ export async function middleware(request) {
     return NextResponse.next();
   } catch (error) {
     // Agar token fake ya expire hai, to login par bhej do
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/admin", request.url));
   }
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/dashboard/:path*"],
 };

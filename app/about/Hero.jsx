@@ -1,16 +1,25 @@
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="min-h-screen flex items-center py-20">
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-          
+            {/* Right Image */}
+          <div className="relative">
+            <img
+              src="https://img.freepik.com/free-photo/man-with-camera_23-2147689324.jpg?uid=R103518039&ga=GA1.1.135994635.1764499232&semt=ais_hybrid&w=740&q=80" // replace with your image path
+              alt="Photographer portrait"
+              className="w-full h-[500px] object-cover rounded-lg grayscale"
+            />
+          </div>
+
+
           {/* Left Content */}
           <div className=" max-w-xl">
-            <div className="w-12 h-px bg-gray-400 mb-6" />
+            
 
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-              I'm John Carter, a <br />
-              product photographer <br />
+              I'm John Carter, <br /> a
+              product photographer 
               from <span className="font-bold">San Francisco, CA</span>
             </h1>
 
@@ -31,14 +40,7 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="relative">
-            <img
-              src="https://i.pinimg.com/1200x/1b/61/96/1b619604ca58ad863bc92a4c1911b916.jpg" // replace with your image path
-              alt="Photographer portrait"
-              className="w-full h-[500px] object-cover rounded-lg grayscale"
-            />
-          </div>
+        
 
         </div>
       </div>

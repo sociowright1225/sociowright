@@ -25,6 +25,8 @@ export default async function PortfolioDetails({ params }) {
 
   const {
     title,
+    location,
+    description,
     category,
     thumbnail,
     gallery = [],
@@ -86,19 +88,10 @@ export default async function PortfolioDetails({ params }) {
               </div>
 
               <div>
-                <p className="text-sm text-gray-400 mb-2">Category</p>
-                <p className="font-semibold text-lg">{category}</p>
+                <p className="text-sm text-gray-400 mb-2">Location</p>
+                <p className="font-semibold text-lg">{location}</p>
               </div>
 
-              <div>
-                <p className="text-sm text-gray-400 mb-2">Client</p>
-                <p className="font-semibold text-lg">{title}</p>
-              </div>
-
-              <div>
-                <p className="text-sm text-gray-400 mb-2">Platform</p>
-                <p className="font-semibold text-lg">Digital Media</p>
-              </div>
             </div>
           </div>
         </div>
@@ -124,7 +117,7 @@ export default async function PortfolioDetails({ params }) {
                   <img
                     src={src}
                     alt={`${title} ${i + 1}`}
-                    className="w-full h-48 sm:h-56 md:h-64 lg:h-96 object-cover hover:scale-105 transition duration-300"
+                    className="w-full h-full sm:h-56 md:h-64 lg:h-96 object-cover hover:scale-105 transition duration-300"
                   />
                 )}
               </div>
