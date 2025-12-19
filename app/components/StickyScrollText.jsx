@@ -99,7 +99,7 @@ export default function StickyScrollText({
             <img
               src={"https://picsum.photos/id/287/300/300"}
               alt=""
-              className="w-70 h-[30rem] bottom-30 left-20 relative max-lg:w-30 max-lg:h-[15rem] "
+              className="w-70 h-[30rem] bottom-30 left-20 max-lg:left-5 max-lg:bottom-30 relative max-lg:w-30 max-lg:h-[15rem] "
             />
           </div>
 
@@ -112,7 +112,7 @@ export default function StickyScrollText({
             <img
               src={"https://picsum.photos/id/287/300/300"}
               alt=""
-              className="w-70 h-[30rem] max-lg:w-30 bottom-0 right-20 max-lg:h-[15rem] max-lg:top-30 relative "
+              className="w-70 h-[30rem] max-lg:w-30 max-lg:right-5 max-lg:top-18 bottom-0 right-20 max-lg:h-[15rem] relative "
             />
           </div>
         </div>
