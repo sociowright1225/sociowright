@@ -8,7 +8,7 @@ const bebas = Bebas_Neue({
 export default function Footer() {
   return (
     <div className="h-screen relative">
-      <footer className="w-full fixed max-md:top-40 -z-10 bottom-0 border-t border-gray-200 px-6 md:px-12  overflow-hidden">
+      <footer className="w-full fixed max-md:top-60 -z-10 bottom-0 border-t border-gray-200 px-6 md:px-12  overflow-hidden">
       
         <div className="w-full py-4 space-y-2 max-lg:space-y-8">
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">

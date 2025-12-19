@@ -55,7 +55,7 @@ export default function Hero() {
         your brand stand out—boldly, beautifully, and impactfully.
       </p>
 
-      <div className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
+      <a href="/contact" className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
         <button
           className="relative group px-8 py-3 bg-[#F2F1EA] text-black hover:text-white rounded-xl border
          border-black text-sm font-serif overflow-hidden transition"
@@ -67,7 +67,7 @@ export default function Hero() {
             transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
           ></span>
         </button>
-      </div>
+      </a>
      <div className="w-full flex ">
        <div className="flex flex-col  relative bottom-30 max-lg:bottom-0 justify-center items-center w-full">
         <div className="flex justify-between  items-center max-w-5xl w-full">
