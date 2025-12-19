@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function Hero() {
   return (
-    <div className="justify-center h-screen relative flex items-center flex-col max-lg:pt-14">
+    <div className="justify-center bg-white h-screen relative flex items-center flex-col pt-50 max-lg:pt-30">
       <div
         style={{
           height: "100%",
@@ -68,6 +68,37 @@ export default function Hero() {
           ></span>
         </button>
       </div>
+     <div className="w-full flex ">
+       <div className="flex flex-col  relative bottom-30 max-lg:bottom-0 justify-center items-center w-full">
+        <div className="flex justify-between  items-center max-w-5xl w-full">
+          {" "}
+          <img
+            className="w-30 max-lg:w-15"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139186/solo-traveller_yjygyz.gif"
+            alt=""
+          />
+          <img
+            className="w-30 max-lg:w-15"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135526/cute-camera_kwemnf.gif"
+            alt=""
+          />
+        </div>
+        <div className="flex justify-between max-lg:justify-evenly items-center max-w-2xl w-full">
+          {" "}
+          <img
+            className="w-30 max-lg:w-15"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135492/photo-gallery_ulaiyv.gif"
+            alt=""
+          />
+          <img
+            className="w-30 max-lg:w-15"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139150/photo-camera_w6d9ry.gif"
+            alt=""
+          />
+          
+        </div>
+      </div>
+     </div>
     </div>
   );
 }
