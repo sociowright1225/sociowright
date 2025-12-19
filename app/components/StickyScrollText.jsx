@@ -47,11 +47,11 @@ export default function StickyScrollText({
   return (
     <section
       ref={containerRef}
-      className="w-full"
+      className="w-full relative"
       style={{ height: containerHeight }}
     >
       <div
-        className={`sticky ${stickyTop} h-[80vh] flex items-center flex-col gap-8 justify-center px-6`}
+        className={`sticky ${stickyTop} h-[80vh] z-10 flex items-center flex-col gap-8 justify-center px-6`}
       >
         <p
           className={`${maxWidth} ${textSize} ${textAlign} ${fontWeight} leading-tight`}
@@ -88,23 +88,22 @@ export default function StickyScrollText({
           </a>
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="w-full max-w-7xl flex items-end justify-between">
-          <div className="">
-            <img
-              src={"https://picsum.photos/id/287/300/300"}
-              alt=""
-              className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem]"
-            />
-          </div>
-          <div className="">
-            <img
-              src={"https://picsum.photos/id/287/300/300"}
-              alt=""
-              className="w-70 h-[20rem] max-lg:w-30 max-lg:h-[10rem]"
-            />
-          </div>
-        </div>
+      <div
+        className="w-full flex justify-center items-center"
+      >
+       <div className="flex h-full items-center w-full max-w-7xl justify-between absolute top-0">
+         <img
+          src={"https://picsum.photos/id/287/300/300"}
+          alt=""
+          className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] "
+        />
+
+        <img
+          src={"https://picsum.photos/id/287/300/300"}
+          alt=""
+          className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] top-50 max-lg:top-30 relative "
+        />
+       </div>
       </div>
     </section>
   );

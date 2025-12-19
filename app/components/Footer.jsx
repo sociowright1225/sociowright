@@ -8,9 +8,8 @@ const bebas = Bebas_Neue({
 export default function Footer() {
   return (
     <div className="h-screen relative">
-      <footer className="w-full fixed max-lg:top-50 bottom-0 -z-10 border-t border-gray-200 px-6 md:px-12  overflow-hidden">
+      <footer className="w-full fixed max-md:top-40 -z-10 bottom-0 border-t border-gray-200 px-6 md:px-12  overflow-hidden">
       
-
         <div className="w-full py-4 space-y-2 max-lg:space-y-8">
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Contact</h3>
@@ -47,9 +46,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="relative z-10 flex justify-between items-center text-xs text-gray-500">
-          <p>© 2025 Milo Theron</p>
-          <p>Made with Framer by Denysfs</p>
+        <div className="relative py-2 text-center flex justify-between items-center text-xs text-gray-500">
+          <p>© 2025 Socio Wright</p>
+          <p>Designed & Developed by <a href="https://zerogravityweb.diginote.in">zerogravityweb</a></p>
         </div>
       </footer>
     </div>

@@ -11,6 +11,7 @@ import AlwaysReady from "./pages/AlwaysReady";
 import StatsSection from "./pages/Stats";
 import Testimonials from "./pages/Testimonials";
 
+
 export default function page() {
   return (
     <div className="bg-[#F2F1EA]">

@@ -12,7 +12,7 @@ export default function Portfolio() {
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/portfolio", {
+        const res = await fetch("https://sociowright.vercel.app/api/portfolio", {
           cache: "no-store",
         });
 
