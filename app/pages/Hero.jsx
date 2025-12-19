@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function Hero() {
   return (
-    <div className="justify-center bg-white h-screen relative flex items-center flex-col pt-50 max-lg:pt-30">
+    <div className="justify-center bg-white h-screen relative flex items-center flex-col pt-50 max-lg:pt-10">
       <div
         style={{
           height: "100%",
