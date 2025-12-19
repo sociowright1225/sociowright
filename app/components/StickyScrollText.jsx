@@ -88,22 +88,34 @@ export default function StickyScrollText({
           </a>
         </div>
       </div>
-      <div
-        className="w-full flex justify-center items-center"
-      >
-       <div className="flex h-full items-center w-full max-w-7xl justify-between absolute top-0">
-         <img
-          src={"https://picsum.photos/id/287/300/300"}
-          alt=""
-          className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] "
-        />
+      <div className="w-full flex justify-center items-center">
+        <div className="flex h-full items-center w-full max-w-7xl justify-between absolute top-0">
+          <div className="">
+            <img
+              src={"https://picsum.photos/id/287/300/300"}
+              alt=""
+              className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] "
+            />
+            <img
+              src={"https://picsum.photos/id/287/300/300"}
+              alt=""
+              className="w-70 h-[30rem] bottom-30 left-20 relative max-lg:w-30 max-lg:h-[15rem] "
+            />
+          </div>
 
-        <img
-          src={"https://picsum.photos/id/287/300/300"}
-          alt=""
-          className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] top-50 max-lg:top-30 relative "
-        />
-       </div>
+          <div className="">
+            <img
+              src={"https://picsum.photos/id/287/300/300"}
+              alt=""
+              className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] top-50 max-lg:top-30 relative "
+            />{" "}
+            <img
+              src={"https://picsum.photos/id/287/300/300"}
+              alt=""
+              className="w-70 h-[30rem] max-lg:w-30 bottom-0 right-20 max-lg:h-[15rem] max-lg:top-30 relative "
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

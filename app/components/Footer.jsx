@@ -39,9 +39,9 @@ export default function Footer() {
         {/* Huge background name */}
         <div className=" bottom-0 left-0 w-full pointer-events-none select-none">
           <h1
-            className={`text-[20vw] ${bebas} uppercase text-center leading-none font-bold text-gray-300 opacity-70 whitespace-nowrap`}
+            className={`text-[20vw] ${bebas.className} uppercase text-center leading-none font-bold text-gray-300 opacity-70 whitespace-nowrap`}
           >
-            Chinmay
+            Socio Wright
           </h1>
         </div>
 
