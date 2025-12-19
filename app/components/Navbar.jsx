@@ -58,20 +58,20 @@ export default function Navbar() {
       {open && (
         <div className="fixed inset-0 bg-[#CBB892] z-50 px-6 py-6 flex flex-col">
           {/* Top Row: CLOSE + LOGO */}
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex flex-row-reverse items-center justify-between mb-10">
             <button
               className="text-xs tracking-widest"
               onClick={() => setOpen(false)}
             >
               CLOSE
             </button>
-
+{/* 
             <h1
               className={`text-6xl font-bold max-lg:text-4xl ${bebas.className} tracking-tight`}
             >
               {" "}
               Socio Wright
-            </h1>
+            </h1> */}
           </div>
 
           {/* Main Menu Links */}

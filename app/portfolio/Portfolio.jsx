@@ -83,7 +83,7 @@ export default function Portfolio() {
         </div>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 h-screen sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map((project) => (
             <Link
               key={project._id}
@@ -96,7 +96,7 @@ export default function Portfolio() {
                 className="w-full h-44 sm:h-56 md:h-64 object-cover"
               />
 
-              <div className="p-3 bg-gray-50 border-t border-gray-200">
+              <div className="p-3 bg-white border-t border-gray-200">
                 <p className="text-base sm:text-lg font-semibold text-gray-800">
                   {project.title}
                 </p>
