@@ -1,5 +1,7 @@
 "use client";
 
+import TextType from "../components/TextType";
+
 export default function AboutUs() {
   return (
     <div className="flex justify-center items-center">
@@ -8,8 +10,14 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-10 sm:gap-12 items-center mb-16 sm:mb-20">
           {/* Left Title */}
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-serif font-thin leading-snug">
-            Socio Wright finds, shares, and inspires the little things that make
-            life more beautiful.
+            <TextType
+  text={["Socio Wright finds,", "shares, and inspires the little", "things that make life more beautiful.!"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+/>
+  
           </h1>
 
           {/* Right Text */}

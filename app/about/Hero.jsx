@@ -1,3 +1,5 @@
+import TextType from "../components/TextType";
+
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center py-20">
@@ -18,10 +20,18 @@ export const Hero = () => {
             
 
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-              I'm John Carter, <br /> a
-              product photographer 
-              from <span className="font-bold">San Francisco, CA</span>
-            </h1>
+  I'm John Carter,
+  <br />
+  I provide services in{" "} <br />
+  <TextType
+    text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
+    typingSpeed={75}
+    pauseDuration={1500}
+    showCursor={true}
+    cursorCharacter="|"
+  />
+</h1>
+
 
             <p className="mt-6 text-gray-400 text-sm leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit,
