@@ -69,16 +69,16 @@ export default function Hero() {
         </button>
       </a>
      <div className="w-full flex ">
-       <div className="flex flex-col  relative bottom-30 max-lg:bottom-0 justify-center items-center w-full">
+       <div className="flex flex-col  relative bottom-30 max-lg:bottom-10 justify-center items-center w-full">
         <div className="flex justify-between  items-center max-w-5xl w-full">
           {" "}
           <img
-            className="w-30 max-lg:w-15"
+            className="w-30 max-lg:w-20"
             src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212989/photographer_z0zlnm.png"
             alt=""
           />
           <img
-            className="w-30 max-lg:w-15"
+            className="w-30 max-lg:w-20"
             src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212987/camera_movyak.png"
             alt=""
           />
@@ -86,12 +86,12 @@ export default function Hero() {
         <div className="flex justify-between max-lg:justify-evenly items-center max-w-2xl w-full">
           {" "}
           <img
-            className="w-30 max-lg:w-15"
+            className="w-30 max-lg:w-20"
             src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766213357/social-media-marketing_z0cshv.png"
             alt=""
           />
           <img
-            className="w-30 max-lg:w-15"
+            className="w-30 max-lg:w-20"
             src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212988/photo_zs5uvh.png"
             alt=""
           />
