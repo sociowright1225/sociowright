@@ -41,7 +41,7 @@ const StatsSection = () => {
 
             {/* Text */}
             <div className="max-w-md">
-              <h3 className="text-base font-semibold uppercase tracking-wide mb-3">
+              <h3 className="text-base  font-semibold uppercase tracking-wide mb-3">
                 {stat.title}
               </h3>
               <p className="text-base text-gray-700 leading-relaxed">

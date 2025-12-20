@@ -3,7 +3,14 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // बटन के लिए आइकन
+import { Space_Grotesk } from "next/font/google";
+import BlurText from '../components/buildKeyframes';
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 const items = [
   { id: 1, title: "The Socio Wright Hat", img: "https://res.cloudinary.com/dwdmczhsn/image/upload/v1765459851/main-sample.png", price: "₹2,709.16 INR" },
   { id: 2, title: "Create With Pleasure Sweater", img: "https://res.cloudinary.com/dwdmczhsn/image/upload/v1765547385/Screenshot_2025-12-12_190942_lmfgg9.png", price: "₹8,037.19 INR" },
@@ -32,7 +39,13 @@ export default function Portfolio() {
         {/* Header Section */}
         <div className="w-full flex py-8 flex-col md:flex-row justify-between items-start gap-4">
           <div className="space-y-2">
-            <h2 className="text-4xl font-bold text-[#2d2d2d]">Our Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-[#2d2d2d]">  <BlurText
+          text="Our Featured Projects"
+          delay={250}
+          animateBy="words"
+          direction="top"
+          className={`text-red-500 uppercase ${spaceGrotesk}`}
+        /></h2>
             <p className="text-gray-600">Explore our latest creative works</p>
           </div>
           

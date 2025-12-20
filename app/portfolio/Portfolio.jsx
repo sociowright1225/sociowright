@@ -2,6 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import "../components/loader.css"
+import BlurText from "../components/buildKeyframes";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
+
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([]);
@@ -43,8 +53,8 @@ export default function Portfolio() {
 
   if (loading) {
     return (
-      <p className="pt-40 h-screen text-center text-gray-500">
-        Loading portfolio...
+      <p className=" pt-40 h-screen flex justify-center text-center text-gray-500">
+       <div className=""><div className="loader"></div></div>
       </p>
     );
   }
@@ -62,7 +72,13 @@ export default function Portfolio() {
       <div className="w-full max-w-[1200px] text-black pt-10 pb-16">
         {/* Dynamic Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-10 text-gray-800">
-          {activeCategory.toUpperCase()}
+          <BlurText
+          text={activeCategory.toUpperCase()}
+          delay={250}
+          animateBy="words"
+          direction="top"
+          className={`space text-8xl max-lg:text-5xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
+        />
         </h1>
 
         {/* Category Buttons */}

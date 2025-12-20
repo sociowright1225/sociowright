@@ -1,7 +1,14 @@
 "use client"; // This is the crucial line
 
 import React from 'react';
+import { Space_Grotesk } from "next/font/google";
+import BlurText from '../components/buildKeyframes';
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 const testimonials = [
   { id: 1, name: "Sarah J.", role: "Director", content: "The responsiveness of the team exceeded our expectations.", avatar: "https://i.pravatar.cc/150?u=1" },
   { id: 2, name: "James C.", role: "Founder", content: "A total game changer for our internal workflow and UI.", avatar: "https://i.pravatar.cc/150?u=2" },
@@ -30,7 +37,15 @@ export default function TestimonialMarquee() {
       `}} />
 
       <div className="max-w-7xl mx-auto px-4 mb-12 text-center">
-        <h2 className="text-5xl font-bold text-gray-900 uppercase leading-tight">Testimonials</h2>
+        <h2 className="text-5xl font-bold text-gray-900 uppercase leading-tight">
+            <BlurText
+          text="Testimonials"
+          delay={250}
+          animateBy="words"
+          direction="top"
+          className={`text-red-500 ${spaceGrotesk}`}
+        />
+          </h2>
    
       </div>
 

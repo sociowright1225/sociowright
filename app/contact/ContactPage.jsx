@@ -1,4 +1,12 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { Space_Grotesk } from "next/font/google";
+import BlurText from '../components/buildKeyframes';
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 
 export default function ContactPage() {
   return (
@@ -8,21 +16,24 @@ export default function ContactPage() {
        {/* HEADER / HERO */}
       <div
         className="
-          relative h-48 sm:h-56 md:h-64 
+          relative h-28 md:h-36 
           w-full bg-cover bg-center rounded-2xl
         "
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/dwdmczhsn/image/upload/v1765460452/smiley-woman-with-photo-camera_rfledu.jpg')",
-        }}
+ 
       >
-        <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+        <div className="absolute inset-0 rounded-2xl "></div>
 
         <div className="relative z-10 flex flex-col text-center justify-center h-full px-4 sm:px-10 lg:px-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide text-white">
-            CONTACT US
+           <BlurText
+          text="CONTACT US"
+          delay={250}
+          animateBy="words"
+          direction="top"
+          className={`text-red-500 ${spaceGrotesk}`}
+        />
           </h1>
-          <p className="uppercase text-xs sm:text-sm mt-2 tracking-widest text-white">
+          <p className="uppercase text-xs sm:text-sm mt-2 tracking-widest text-black">
             we'd love to hear what you think
           </p>
         </div>

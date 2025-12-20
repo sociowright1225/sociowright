@@ -1,7 +1,7 @@
 import React from "react";
 import BlurText from "../components/buildKeyframes";
-import { Space_Grotesk } from "next/font/google";
 import ImageTrail from "../components/ImageTrail";
+import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -74,12 +74,12 @@ export default function Hero() {
           {" "}
           <img
             className="w-30 max-lg:w-15"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139186/solo-traveller_yjygyz.gif"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212989/photographer_z0zlnm.png"
             alt=""
           />
           <img
             className="w-30 max-lg:w-15"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135526/cute-camera_kwemnf.gif"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212987/camera_movyak.png"
             alt=""
           />
         </div>
@@ -87,12 +87,12 @@ export default function Hero() {
           {" "}
           <img
             className="w-30 max-lg:w-15"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135492/photo-gallery_ulaiyv.gif"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766213357/social-media-marketing_z0cshv.png"
             alt=""
           />
           <img
             className="w-30 max-lg:w-15"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139150/photo-camera_w6d9ry.gif"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212988/photo_zs5uvh.png"
             alt=""
           />
           
