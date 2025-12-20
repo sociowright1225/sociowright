@@ -20,7 +20,7 @@ export const Hero = () => {
             
 
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-  I'm John Carter,
+  I'm Chinmay,
   <br />
   I provide services in{" "} <br />
   <TextType
