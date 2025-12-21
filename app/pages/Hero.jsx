@@ -57,8 +57,8 @@ export default function Hero() {
 
       <a href="/contact" className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
         <button
-          className="relative group px-8 py-3 bg-red-500 text-white rounded-xl border
-         border-black text-sm font-serif overflow-hidden transition"
+          className="relative group px-8 py-3 bg-red-500 text-white rounded-xl 
+           text-sm font-serif overflow-hidden transition"
         >
           <span className="relative z-10">Contact Us Now</span>
 
@@ -73,26 +73,26 @@ export default function Hero() {
         <div className="flex justify-between  items-center max-w-5xl w-full">
           {" "}
           <img
-            className="w-30 max-lg:w-20"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212989/photographer_z0zlnm.png"
+            className="w-30 max-lg:w-20 gif-icon"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139186/solo-traveller_yjygyz.gif"
             alt=""
           />
           <img
-            className="w-30 max-lg:w-20"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212987/camera_movyak.png"
+            className="w-30 max-lg:w-20 gif-icon"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135526/cute-camera_kwemnf.gif"
             alt=""
           />
         </div>
         <div className="flex justify-between max-lg:justify-evenly items-center max-w-2xl w-full">
           {" "}
           <img
-            className="w-30 max-lg:w-20"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766213357/social-media-marketing_z0cshv.png"
+            className="w-30 max-lg:w-20 gif-icon"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766139150/photo-camera_w6d9ry.gif"
             alt=""
           />
           <img
-            className="w-30 max-lg:w-20"
-            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766212988/photo_zs5uvh.png"
+            className="w-30 max-lg:w-20 gif-icon"
+            src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1766135492/photo-gallery_ulaiyv.gif"
             alt=""
           />
           

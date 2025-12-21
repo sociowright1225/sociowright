@@ -1,4 +1,7 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { useEffect, useState } from "react";
 
 const bebas = Bebas_Neue({
   weight: "400", // Bebas Neue Bold alag weight me nahi aata, sab 400 hi hota
@@ -6,20 +9,55 @@ const bebas = Bebas_Neue({
 });
 
 export default function Footer() {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolledToBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 20; // buffer
+
+      setActive(scrolledToBottom);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
     <div className="h-screen relative">
-      <footer className="w-full fixed max-md:top-60 -z-10 bottom-0 border-t border-gray-200 px-6 md:px-12  overflow-hidden">
-      
+      <footer
+        className={`fixed bottom-0 w-full border-t border-gray-200 px-6 md:px-12 overflow-hidden transition-all duration-300
+        ${active ? "z-10" : "-z-10"}`}
+      >
         <div className="w-full py-4 space-y-2 max-lg:space-y-8">
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Contact</h3>
-            <p>+91-8905022497, socio.wright@gmail.com </p>
+            <p>
+  <a
+    href="tel:+918905022497"
+    className="hover:underline"
+  >
+    +91-8905022497
+  </a>
+  {", "}
+  <a
+    href="mailto:socio.wright@gmail.com"
+    className="hover:underline"
+  >
+    socio.wright@gmail.com
+  </a>
+</p>
+
           </div>
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Social</h3>
-            <p>Instagram, Linkedin</p>
+            <p>
+              <a href="https://www.instagram.com/sociowright.in?igsh=MXhoM3h1d3dmZm54MQ%3D%3D&utm_source=qr">
+                Instagram
+              </a>
+              , <a href="/">Linkedin</a>
+            </p>
           </div>
-          
+
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Working Hours</h3>
             <p>Working hours: 11AM to 7 PM Sunday closed </p>
@@ -27,9 +65,9 @@ export default function Footer() {
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Location</h3>
             <p className="w-md max-lg:pr-30 text-right max-lg:text-left">
-                Office address: 108, New Housing board complex, infront of
-                shankar nagar chaupati, shankar nagar, Raipur (C.G){" "}
-              </p>
+              Office address: 108, New Housing board complex, infront of shankar
+              nagar chaupati, shankar nagar, Raipur (C.G){" "}
+            </p>
           </div>
         </div>
 
@@ -46,10 +84,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="relative py-2 text-center flex justify-between items-center text-xs text-gray-500">
-          <p>© 2025 Socio Wright</p>
-          <p>Designed & Developed by <a href="https://zerogravityweb.diginote.in">zerogravityweb</a></p>
-        </div>
+    <div className="relative pb-2 flex justify-between items-center max-lg:flex-col text-xs text-gray-500">
+  <p>© {new Date().getFullYear()} Socio Wright</p>
+  <p>
+    Designed & Developed by{" "}
+    <a
+      href="https://zerogravityweb.diginote.in"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-black underline"
+    >
+      zerogravityweb
+    </a>
+  </p>
+</div>
+
       </footer>
     </div>
   );

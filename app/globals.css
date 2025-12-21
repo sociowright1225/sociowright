@@ -8,3 +8,6 @@
   font-family: var(--font-space-grotesk);
 }
 
+.gif-icon {
+  filter: hue-rotate(180deg);
+}
