@@ -9,5 +9,5 @@
 }
 
 .gif-icon {
-  filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg) saturate(900%);
 }
