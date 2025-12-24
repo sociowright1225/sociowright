@@ -130,9 +130,22 @@ export default function ContactPage() {
                 ></textarea>
               </div>
 
-              <button className="w-full bg-[#5D804B] hover:bg-[#466139] text-white font-semibold py-3 rounded-full mt-3 sm:mt-4 text-base sm:text-lg transition">
-                Send Now
-              </button>
+              <button
+        
+            className=" bottom-20 max-lg:bottom-10 w-full left-20 max-lg:left-10 z-50"
+          >
+            <button
+              className="relative group px-8 py-3 w-full bg-red-500 shadow text-white rounded-full 
+           text-sm overflow-hidden transition"
+            >
+              <span className="relative z-10 uppercase"> Send Now</span>
+
+              <span
+                className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black 
+            transition-all duration-150 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
+              ></span>
+            </button>
+          </button>
             </form>
           </div>
         </div>
