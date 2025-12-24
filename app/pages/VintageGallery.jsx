@@ -1,4 +1,12 @@
 import { FaInstagram } from "react-icons/fa";
+import BlurText from "../components/buildKeyframes";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 
 export default function VintageGallery() {
   const images = [
@@ -15,12 +23,15 @@ export default function VintageGallery() {
       <section className="w-full max-w-[1300px] py-12 md:py-16 bg-[#fdfbf7]">
         {/* Top Heading */}
         <div className="text-center max-w-3xl mx-auto px-4">
-          <p className="tracking-wide text-[12px] sm:text-[13px] font-medium text-neutral-700 leading-relaxed">
-            DRAWING INSPIRATION FROM VINTAGE FILM, MAGAZINES, AND FASHION, THE
-            Socio Wright APP FEATURES PRESETS THAT TRANSPORT YOU BACK IN TIME TO
-            CREATE INSTANT NOSTALGIA AND QUALITY CONTENT. TAG US IN YOUR PHOTOS
-            AND VIDEOS FOR A CHANCE TO BE FEATURED.
-          </p>
+       <h2 className="text-4xl font-bold text-[#2d2d2d]">
+            <BlurText
+              text=" OUR MOST VIEWED ON INSTAGRAM "
+              delay={250}
+              animateBy="words"
+              direction="top"
+              className={`text-red-500 uppercase ${spaceGrotesk.className}`}
+            />
+          </h2>
         </div>
 
         {/* Scrollable Image Row */}

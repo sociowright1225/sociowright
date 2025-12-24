@@ -4,10 +4,13 @@ export default function About() {
   return (
     <div className="flex flex-col  justify-center items-center">
       <StickyScrollText
-        text={`I'm Chinmay Meharia, an interior photographer and videographer based in India. 
-          My work is about more than just showcasing beautiful spaces — it's about capturing the mood,
-           texture, and light that give a space its character. I aim to create visuals that feel real, 
-           intentional, and emotionally grounded, letting every interior speak for itself.`}
+        text={`I’m Chinmay Meharia, the founder of Socio Wright. I built this agency to bridge the gap
+between high-end production and high-converting strategy. Most agencies give you one
+or the other—pretty visuals that don’t sell, or dry data that bores your audience. My
+approach is different. I believe modern marketing requires both: stories that stop the
+scroll and strategies that drive the sale.
+
+`}
         mode="word"
         inactiveColor="text-white"
         activeColor="text-black"

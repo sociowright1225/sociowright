@@ -76,8 +76,8 @@ export default function StickyScrollText({
         <div className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
           <a
             href="/portfolio"
-            className="relative group px-8 py-3 bg-[#F2F1EA] text-black hover:text-white rounded-xl border
-         border-black text-sm font-serif overflow-hidden transition"
+            className="relative group px-8 py-3 bg-red-500 text-white hover:text-white rounded-xl
+             text-sm overflow-hidden transition"
           >
             <span className="relative z-10">See My Works</span>
 

@@ -4,22 +4,27 @@ const StatsSection = () => {
   const stats = [
     {
       value: 2,
-      title: "Years Experiences",
-      description:
-        "Two years of capturing space, light, and quiet details. This isn’t just practice—it’s a visual journey shaped by instinct, curiosity, and a deep love for design.",
+      title: "YEARS OF STRATEGY",
+      description: `Two years of bridging the gap between creative content and commercial goals.
+We’ve spent this time perfecting a formula that combines high-end aesthetics with
+hard-hitting marketing psychology to deliver real ROI.
+`,
     },
     {
       value: 101,
       suffix: "%",
-      title: "Satisfied Clients",
-      description:
-        "Not just satisfied—they return. Every project runs smooth thanks to clear communication, precise results, and a process that feels natural.",
+      title: "Client Satisfaction",
+      description: `We don’t act like an external vendor; we operate like your internal marketing
+arm. We argue for your best interests, celebrate your wins, and sweat the details so you
+don't have to. It’s less of a contract, more of a collaboration.`,
     },
     {
       value: 40,
-      title: "Clients",
-      description:
-        "From studios to Bunglows across Raipur, I’ve worked with architects, designers, and brands who value compelling visuals and a fresh perspective.",
+      title: " Clients across industries",
+      description: `We speak the language of design and build. From architectural hardware and
+digital signage to bespoke furniture, we understand the nuances of your niche. We help
+40+ businesses bridge the gap between industrial manufacturing and consumer desire.
+`,
     },
   ];
 
@@ -33,10 +38,7 @@ const StatsSection = () => {
           >
             {/* Number */}
             <div>
-              <CountUpNumber
-                value={stat.value}
-                suffix={stat.suffix || ""}
-              />
+              <CountUpNumber value={stat.value} suffix={stat.suffix || ""} />
             </div>
 
             {/* Text */}

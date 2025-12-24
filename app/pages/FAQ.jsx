@@ -4,30 +4,31 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "How do I book a photoshoot?",
-    a: "You can book a session by filling out the contact form on my website or reaching out via email. Let me know your preferred date, location, and any specific ideas you have in mind."
+    q: "Do you offer marketing or just production?",
+    a: "We offer both. Socio Wright handles your digital strategy, social media management, and ads, while Cine Wright covers high-end photography and video production. You can book us for one service or a full integrated package."
   },
   {
-    q: "What’s your photography style?",
-    a: "My style is clean, natural, and story-driven, focusing on light, composition, and authentic moments."
+    q: "Do you guarantee results for social media marketing?",
+    a: "We guarantee a data-driven approach. While viral reach can never be promised, our clients typically see a 2X increase in engagement and lead quality within the first 90 days of our strategic overhaul."
   },
   {
-    q: "Do you offer retouching and editing?",
-    a: "Yes, all delivered photos include professional color correction and light retouching."
+    q: "For interior shoots, do you charge by the hour or by image?",
+    a: "We typically work on a project or day-rate basis. This ensures we are not rushing the shoot and have enough time to capture changing light throughout the day for the best possible results."
   },
   {
-    q: "How long does it take to receive the final photos?",
-    a: "Final images are typically delivered within 1–2 weeks depending on the scope of the project."
+    q: "Do you create the content for our social media?",
+    a: "Yes. Unlike agencies that ask you for photos, we create them. From reels to static graphics and professional product photography, we handle the entire content supply chain."
   },
   {
-    q: "What if I need to reschedule or cancel?",
-    a: "Please notify me at least 48 hours in advance. We can reschedule based on availability."
+    q: "What industries do you specialize in?",
+    a: "We have deep expertise in Architecture, Interior Design, and Building Material sectors such as RMC, lighting, and hardware. We also work with select lifestyle and retail brands that value high aesthetics."
   },
   {
-    q: "What’s your payment process?",
-    a: "A deposit is required to secure your booking, with the remaining balance due upon delivery."
+    q: "How do we get started?",
+    a: "It starts with a discovery call. We discuss your current challenges, whether it is brand awareness or visual quality, and then tailor a proposal aligned with your business goals."
   }
 ];
+
 
 export default function FAQ() {
   const [active, setActive] = useState(0);

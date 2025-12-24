@@ -41,26 +41,26 @@ export default function Hero() {
       </div>
       <h1 className="flex justify-center items-center">
         <BlurText
-          text="RAW REAL UNFILTERED"
+          text=" Real Stories. Unfiltered Impact."
           delay={250}
           animateBy="words"
           direction="top"
-          className={`space text-8xl max-lg:text-5xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
+          className={`space text-7xl max-lg:text-5xl xl:w-7xl uppercase text-red-500 mb-4 text-center ${spaceGrotesk}`}
         />
       </h1>
       <p className="max-w-2xl mb-4 text-center">
-        Our digital strategies are crafted to elevate your brand with clarity,
-        creativity, and precision. From social campaigns to high-converting
-        funnels, we bring together data-driven insight and modern design to help
-        your brand stand out—boldly, beautifully, and impactfully.
+        In a world of polished noise, authenticity wins. From bold social
+campaigns to precision-engineered funnels, we craft the digital presence your brand
+deserves—bold, beautiful, and distinctively yours.
+
       </p>
 
       <a href="/contact" className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
         <button
           className="relative group px-8 py-3 bg-red-500 text-white rounded-xl 
-           text-sm font-serif overflow-hidden transition"
+           text-sm overflow-hidden transition"
         >
-          <span className="relative z-10">Contact Us Now</span>
+          <span className="relative z-10"> Let’s Create</span>
 
           <span
             className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-xl bg-black 

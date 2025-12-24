@@ -60,12 +60,12 @@ export default function Footer() {
 
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Working Hours</h3>
-            <p>Working hours: 11AM to 7 PM Sunday closed </p>
+            <p>11AM to 7 PM Sunday closed </p>
           </div>
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Location</h3>
             <p className="w-md max-lg:pr-30 text-right max-lg:text-left">
-              Office address: 108, New Housing board complex, infront of shankar
+              108, New Housing board complex, infront of shankar
               nagar chaupati, shankar nagar, Raipur (C.G){" "}
             </p>
           </div>
