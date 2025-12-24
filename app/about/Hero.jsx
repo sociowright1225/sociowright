@@ -16,20 +16,19 @@ export const Hero = () => {
 
           {/* Left Content */}
           <div className=" max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-              I'm Chinmay,
-              <br />I help brands grow through {" "}
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              I'm Chinmay, I help <br /> brands grow through <br />
               <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
                 pauseDuration={1500}
                 showCursor={true}
                 cursorCharacter="|"
-                className="text-red-500"
+                className="text-gray-500"
               />
             </h1>
 
-            <p className="mt-6 text-gray-500 text-sm leading-relaxed">
+            <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
               My path wasn't a straight line. I explored Engineering and even
               the world of CA, but neither sparked the passion I was looking
               for. That changed when I discovered marketing. I cut my teeth as a
@@ -52,17 +51,37 @@ export const Hero = () => {
 
             <div className="mt-8 flex items-center gap-4">
               <a
-                href="/projects"
-                className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+                href="/portfolio"
+                className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
               >
-                Browse Gallery
+                <button
+                  className="relative group px-8 py-3 bg-white shadow hover:text-white text-black rounded-full 
+           text-sm overflow-hidden transition"
+                >
+                  <span className="relative z-10">Browse Gallery</span>
+
+                  <span
+                    className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black 
+            transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
+                  ></span>
+                </button>
               </a>
 
               <a
-                href="tel:918905022497"
-                className="bg-gray-800 text-white  px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700 transition"
+                href="/contact"
+                className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
               >
-                Get in touch
+                <button
+                  className="relative group px-8 py-3 bg-red-500 shadow text-white rounded-full
+           text-sm overflow-hidden transition"
+                >
+                  <span className="relative z-10"> Get in touch</span>
+
+                  <span
+                    className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black 
+            transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
+                  ></span>
+                </button>
               </a>
             </div>
           </div>

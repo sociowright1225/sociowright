@@ -92,10 +92,20 @@ export default function Portfolio() {
           </div>
 
           <a
-            href="/portfolio"
-            className="ml-4 uppercase px-8 py-3 bg-[#5F7D3A] text-white text-sm font-medium rounded-full hover:bg-[#4e682f] transition-all"
+            href="/projects"
+            className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
           >
-            Portfolio
+            <button
+              className="relative group px-8 py-3 bg-red-500 shadow text-white rounded-full 
+           text-sm overflow-hidden transition"
+            >
+              <span className="relative z-10 uppercase"> portfolio</span>
+
+              <span
+                className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black 
+            transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
+              ></span>
+            </button>
           </a>
         </div>
 

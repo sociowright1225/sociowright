@@ -43,7 +43,7 @@ export default function TestimonialMarquee() {
           delay={250}
           animateBy="words"
           direction="top"
-          className={`text-red-500 ${spaceGrotesk}`}
+          className={`text-red-500 ${spaceGrotesk.className}`}
         />
           </h2>
    
