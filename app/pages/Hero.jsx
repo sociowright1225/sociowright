@@ -57,13 +57,13 @@ deserves—bold, beautiful, and distinctively yours.
 
       <a href="/contact" className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50">
         <button
-          className="relative group px-8 py-3 bg-red-500 text-white rounded-xl 
+          className="relative group px-8 py-3 bg-red-500 text-white rounded-full 
            text-sm overflow-hidden transition"
         >
           <span className="relative z-10"> Let’s Create</span>
 
           <span
-            className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-xl bg-black 
+            className=" absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black 
             transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"
           ></span>
         </button>
