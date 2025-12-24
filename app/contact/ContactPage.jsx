@@ -23,7 +23,7 @@ export default function ContactPage() {
           <div className="absolute inset-0 rounded-2xl "></div>
 
           <div className="relative z-10 flex flex-col text-center justify-center h-full px-4 sm:px-10 lg:px-16">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-wide text-white">
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-white">
               <BlurText
                 text="CONTACT US"
                 delay={250}
