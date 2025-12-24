@@ -92,7 +92,7 @@ export default function Portfolio() {
           </div>
 
           <a
-            href="/projects"
+            href="/portfolio"
             className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
           >
             <button
