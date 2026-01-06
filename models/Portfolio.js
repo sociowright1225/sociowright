@@ -4,7 +4,7 @@ const PortfolioSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
     location: { type: String, required: true },
-    description:{ type: String },
+    description: { type: String },
     slug: { type: String, required: true, unique: true },
     category: {
       type: String,
