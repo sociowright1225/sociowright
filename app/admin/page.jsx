@@ -100,7 +100,7 @@ export default function LoginPage() {
         </div>
         
         <p className="text-center text-slate-500 text-sm mt-8">
-          &copy; {new Date().getFullYear()} Your Company Admin Portal
+          &copy; {new Date().getFullYear()} Socio Wright Admin Portal
         </p>
       </div>
     </div>
