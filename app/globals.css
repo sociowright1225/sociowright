@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}
+
+.space {
+  font-family: var(--font-space-grotesk);
+}
+
+.gif-icon {
+  filter: hue-rotate(180deg) saturate(900%);
+}
