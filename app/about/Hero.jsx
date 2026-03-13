@@ -89,6 +89,14 @@ export const Hero = () => {
       </div>
       <div className="max-w-7xl mx-auto pt-30 px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+           {/* Right Image */}
+          <div className="relative lg:hidden">
+            <img
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773426511/6C8D9DA3-8634-49FA-945C-9060F6310F33_twolfw.jpg" // replace with your image path
+              alt="Photographer portrait"
+              className="w-full h-[500px] object-cover rounded-lg "
+            />
+          </div>
           {/* Left Content */}
           <div className=" max-w-xl">
             {/* <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
@@ -159,7 +167,7 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative max-lg:hidden">
             <img
               src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773426511/6C8D9DA3-8634-49FA-945C-9060F6310F33_twolfw.jpg" // replace with your image path
               alt="Photographer portrait"
