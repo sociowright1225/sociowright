@@ -46,6 +46,18 @@ export default function AdminDashboard() {
   /* ================= 3. LINKS STATE ================= */
   const [links, setLinks] = useState([]);
   const [lForm, setLForm] = useState({ id: null, title: "", url: "" });
+  const [videoUrl, setVideoUrl] = useState("");
+
+  const addVideoToGallery = () => {
+  if (!videoUrl) return;
+
+  setPForm((prev) => ({
+    ...prev,
+    gallery: [...(prev.gallery || []), videoUrl]
+  }));
+
+  setVideoUrl("");
+};
 
   /* ================= DATA FETCHING ================= */
   const fetchData = async () => {
@@ -244,7 +256,39 @@ export default function AdminDashboard() {
 
                   <div className="p-4 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
                     <label className="text-[10px] font-black text-gray-400 block mb-2 uppercase">Gallery (Images/Videos)</label>
-                    <input type="file" multiple accept="image/*,video/*" onChange={handleGalleryChange} className="text-xs w-full mb-3" />
+                   <div className="space-y-3">
+
+  {/* IMAGE UPLOAD */}
+  <div>
+    <label className="text-xs font-bold text-gray-500">Upload Images</label>
+    <input
+      type="file"
+      multiple
+      accept="image/*"
+      onChange={handleGalleryChange}
+      className="text-xs w-full"
+    />
+  </div>
+
+  {/* VIDEO URL */}
+  <div className="flex gap-2">
+    <input
+      type="text"
+      placeholder="Paste video URL (.mp4 / Cloudinary)"
+      value={videoUrl}
+      onChange={(e) => setVideoUrl(e.target.value)}
+      className="flex-1 border p-2 rounded text-xs"
+    />
+    <button
+      type="button"
+      onClick={addVideoToGallery}
+      className="bg-black text-white px-3 rounded text-xs"
+    >
+      Add Video
+    </button>
+  </div>
+
+</div>
                     <div className="flex gap-2 flex-wrap">
                       {/* Existing Gallery Preview (Handles Video) */}
                       {pForm.gallery?.map((url, i) => (
