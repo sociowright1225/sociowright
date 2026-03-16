@@ -13,14 +13,10 @@ export default function Footer() {
 
 useEffect(() => {
   const onScroll = () => {
-    const threshold = window.innerHeight * 0.45; 
-    // 25% of screen height
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
 
-    const scrolledToBottom =
-      window.innerHeight + window.scrollY >=
-      document.body.offsetHeight - threshold;
-
-    setActive(scrolledToBottom);
+    setActive(scrollPosition >= pageHeight - window.innerHeight * 0.3);
   };
 
   window.addEventListener("scroll", onScroll);
