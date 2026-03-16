@@ -26,7 +26,7 @@ useEffect(() => {
   return (
     <div className="h-screen relative">
       <footer
-  className={`fixed bottom-0 w-full border-t border-gray-200 px-6 md:px-12 overflow-hidden transition-transform duration-500
+  className={`fixed bottom-0 w-full border-t border-gray-200 px-6 md:px-12 overflow-hidden transition-transform duration-0
   ${active ? "translate-y-0" : "translate-y-full"}`}
 >
         <div className="w-full py-4 space-y-2 max-lg:space-y-8">
