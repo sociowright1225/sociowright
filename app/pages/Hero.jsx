@@ -27,14 +27,13 @@ export default function Hero() {
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680113/hero7_vl9tab.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680305/hero9_mvsmvt.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680315/hero6_uskzye.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680376/hero2_vxdawf.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680418/hero4_bvkwum.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680684/hero9_bkzdzs.jpg",
-            "",
-            "",
+              "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
+            
+           
           ]}
           variant={1}
         />
