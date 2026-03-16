@@ -3,11 +3,6 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const about1 = "/homepage/about1.JPG";
-const about2 = "/homepage/about2.jpg";
-const about3 = "/homepage/about3.JPG";
-const about4 = "/homepage/about4.JPG";
-
 export default function StickyScrollText({
   text = "",
   mode = "word", // "word" | "letter"
@@ -97,14 +92,14 @@ export default function StickyScrollText({
         <div className="flex h-full items-center w-full max-w-7xl justify-between absolute top-0">
           <div className="">
             <Image
-              src={about3}
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674421/about3_zj8iyd.jpg"
               alt=""
               width={1000}
               height={1000}
               className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] "
             />
             <Image
-              src={about2}
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773681088/about2_h3ddhs.jpg"
               alt=""
               width={1000}
               height={1000}
@@ -114,14 +109,14 @@ export default function StickyScrollText({
 
           <div className="">
             <Image
-              src={about1}
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674424/about1_rxokl5.jpg"
               alt=""
               width={1000}
               height={1000}
               className="w-70 h-[30rem] max-lg:w-30 max-lg:h-[15rem] top-50 max-lg:top-30 relative "
             />{" "}
             <Image
-              src={about4}
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674357/about4_v4zls5.jpg"
               alt=""
               width={1000}
               height={1000}

@@ -2,17 +2,6 @@ import React from "react";
 import BlurText from "../components/buildKeyframes";
 import ImageTrail from "../components/ImageTrail";
 import { Space_Grotesk } from "next/font/google";
-const hero1 = "/homepage/hero1.jpg";
-const hero2 = "/homepage/hero2.jpg";
-const hero3 = "/homepage/hero3.jpg";
-const hero4 = "/homepage/hero4.jpg";
-const hero5 = "/homepage/hero5.jpg";
-const hero6 = "/homepage/hero6.jpg";
-const hero7 = "/homepage/hero7.jpg";
-const hero8 = "/homepage/hero8.jpg";
-const hero9 = "/homepage/hero9.jpg";
-const hero10 = "/homepage/hero10.jpg";
-const hero11 = "/homepage/hero11.jpg";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -33,18 +22,19 @@ export default function Hero() {
       >
         <ImageTrail
           items={[
-            hero1,
-            hero2,
-            hero3,
-            hero4,
-            hero5,
-            hero6,
-            hero7,
-            hero8,
-            hero9,
-            hero10,
-            hero11,
-            
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680113/hero7_vl9tab.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680305/hero9_mvsmvt.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680315/hero6_uskzye.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680376/hero2_vxdawf.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680418/hero4_bvkwum.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773680684/hero9_bkzdzs.jpg",
+            "",
+            "",
           ]}
           variant={1}
         />
