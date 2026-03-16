@@ -35,45 +35,42 @@ export async function PUT(req, { params }) {
       return NextResponse.json({ error: "Project not found" }, { status: 404 });
     }
 
-    // 1. Update Basic Fields
+    // 1. Basic Fields Update
     project.title = formData.get("title") || project.title;
     project.location = formData.get("location") || project.location;
     project.description = formData.get("description") || project.description;
     project.category = formData.get("category") || project.category;
     project.date = formData.get("date") || project.date;
 
-    // 2. Handle Thumbnail Update
+    // 2. Thumbnail Update
     const newThumb = formData.get("thumbnail");
-    // Check if it's a new File object (not a string URL)
     if (newThumb && typeof newThumb !== "string" && newThumb.size > 0) {
       project.thumbnail = await uploadToCloudinary(newThumb, "portfolio/thumbnails");
     }
 
-    // 3. Granular Gallery Management
+    // 3. IMPORTANT: Video URL Sync (Strings)
+    // Frontend se "existingGallery" mein wo saare URLs (Images + New/Old Video URLs) bhejein
+    const existingGallery = JSON.parse(formData.get("existingGallery") || "[]");
     
-    // Step A: Remove marked URLs
-    const removedData = formData.get("removedGalleryUrls");
-    if (removedData) {
-      const urlsToRemove = JSON.parse(removedData);
-      if (urlsToRemove.length > 0) {
-        project.gallery = project.gallery.filter(url => !urlsToRemove.includes(url));
-      }
-    }
-
-    // Step B: Append New Gallery Files
+    // 4. Handle New Gallery Files (Images/Videos from Local)
     const newGalleryFiles = formData.getAll("galleryFiles");
+    let newUploadedUrls = [];
+
     if (newGalleryFiles.length > 0) {
       const uploadPromises = newGalleryFiles
-        .filter(file => file.size > 0) // Ensure file is valid
+        .filter(file => file instanceof File && file.size > 0)
         .map(file => uploadToCloudinary(file, "portfolio/gallery"));
       
-      const newUploadedUrls = await Promise.all(uploadPromises);
-      
-      // Merge new URLs with existing ones
-      project.gallery = [...project.gallery, ...newUploadedUrls];
+      newUploadedUrls = await Promise.all(uploadPromises);
     }
 
-    // Save changes to MongoDB
+    // 5. Final Merge: Existing (including new video URLs) + New Uploads
+    // Purane gallery ko naye list se replace karein jo frontend ne bheji hai
+    project.gallery = [...existingGallery, ...newUploadedUrls];
+
+    // Mongoose ko batayein ki array change hua hai warna save nahi hoga
+    project.markModified('gallery'); 
+    
     await project.save();
     
     return NextResponse.json(project, { status: 200 });
