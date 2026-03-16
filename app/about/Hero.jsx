@@ -17,7 +17,7 @@ export const Hero = () => {
           {/* Left Content */}
           <div className=" max-w-xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              We help brands grow through <br />
+              I'am Chinmay, help brands grow through <br />
               <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
