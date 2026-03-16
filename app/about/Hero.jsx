@@ -8,7 +8,7 @@ export const Hero = () => {
           {/* Right Image */}
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773427140/IMAGE_cdafna.png" // replace with your image path
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773426511/6C8D9DA3-8634-49FA-945C-9060F6310F33_twolfw.jpg" // replace with your image path
               alt="Photographer portrait"
               className="w-full h-[500px] object-cover rounded-lg "
             />
@@ -169,7 +169,7 @@ export const Hero = () => {
           {/* Right Image */}
           <div className="relative max-lg:hidden">
             <img
-              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773426511/6C8D9DA3-8634-49FA-945C-9060F6310F33_twolfw.jpg" // replace with your image path
+              src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773427140/IMAGE_cdafna.png" // replace with your image path
               alt="Photographer portrait"
               className="w-full h-[500px] object-cover rounded-lg "
             />
