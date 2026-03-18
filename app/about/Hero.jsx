@@ -99,35 +99,47 @@ export const Hero = () => {
           </div>
           {/* Left Content */}
           <div className=" max-w-xl">
-            {/* <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              We help brands grow through <br />
-              <TextType
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              I'am Krishna <br />
+              {/* <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
                 pauseDuration={1500}
                 showCursor={true}
                 cursorCharacter="|"
                 className="text-gray-500"
-              />
-            </h1> */}
+              /> */}
+            </h1>
 
           <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-  Creativity has always been a natural part of who I am. I’ve always enjoyed 
-  capturing moments, editing visuals, and experimenting with ideas that turn 
-  simple concepts into meaningful stories. After completing my 12th grade, 
-  I joined my family business, but soon realized that the routine of managing 
-  numbers and calculations wasn’t where my true passion lived.
-<br />
-  What truly excited me was the creative process of building something impactful. 
-  That’s when I discovered the world of marketing. It felt like the perfect blend 
-  of creativity and strategy. I began exploring content creation, branding, 
-  social media strategy, and digital growth.
-<br />
-  Over time, I had the opportunity to work with different brands, helping them 
-  strengthen their presence, connect with their audience, and grow in an 
-  authentic way. Today, through <span className="font-medium text-gray-700">Socio Wright</span>, 
-  I channel that same passion into helping businesses expand their reach and 
-  build brands that truly stand out.
+  
+
+        <p className="text-lg text-gray-700 leading-relaxed ">
+          My Journey I’ve always been drawn to <span className="font-semibold text-gray-700">creativity</span>—
+          capturing moments, editing, and bringing ideas to life.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed ">
+          After 12th, I stepped into my family business, but quickly realized that 
+          routine desk work wasn’t where I thrived.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed ">
+          That’s when I discovered{" "}
+          <span className="font-semibold text-gray-700">marketing</span>—the perfect blend of 
+          creativity and strategy.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed">
+          I immersed myself in learning, experimenting, and building, eventually helping 
+          multiple brands grow, connect with their audience, and stand out in a crowded space.
+        </p>
+
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Today, through{" "}
+          <span className="font-semibold text-gray-700">Socio Wright</span>, I focus on 
+          turning ideas into impact and helping brands grow with clarity and purpose.
+        </p>
 </p>
 
             <div className="mt-8 flex items-center gap-4">
