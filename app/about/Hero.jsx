@@ -89,7 +89,7 @@ export const Hero = () => {
       </div>
       <div className="max-w-7xl mx-auto pt-30 px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-           {/* Right Image */}
+          {/* Right Image */}
           <div className="relative lg:hidden">
             <img
               src="https://res.cloudinary.com/dwdmczhsn/image/upload/v1773427140/IMAGE_cdafna.png" // replace with your image path
@@ -100,7 +100,7 @@ export const Hero = () => {
           {/* Left Content */}
           <div className=" max-w-xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              I'am Krishna <br />
+              I'am Krishna, and <br />
               {/* <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
@@ -111,36 +111,21 @@ export const Hero = () => {
               /> */}
             </h1>
 
-          <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-  
-
-        <p className="text-lg text-gray-700 leading-relaxed ">
-          My Journey I’ve always been drawn to <span className="font-semibold text-gray-700">creativity</span>—
-          capturing moments, editing, and bringing ideas to life.
-        </p>
-
-        <p className="text-lg text-gray-700 leading-relaxed ">
-          After 12th, I stepped into my family business, but quickly realized that 
-          routine desk work wasn’t where I thrived.
-        </p>
-
-        <p className="text-lg text-gray-700 leading-relaxed ">
-          That’s when I discovered{" "}
-          <span className="font-semibold text-gray-700">marketing</span>—the perfect blend of 
-          creativity and strategy.
-        </p>
-
-        <p className="text-lg text-gray-700 leading-relaxed">
-          I immersed myself in learning, experimenting, and building, eventually helping 
-          multiple brands grow, connect with their audience, and stand out in a crowded space.
-        </p>
-
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Today, through{" "}
-          <span className="font-semibold text-gray-700">Socio Wright</span>, I focus on 
-          turning ideas into impact and helping brands grow with clarity and purpose.
-        </p>
-</p>
+            <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
+              My Journey I’ve always been drawn to{" "}
+              <span className="font-semibold text-gray-700">creativity</span> {" "}—
+              capturing moments, editing, and bringing ideas to life. After
+              12th, I stepped into my family business, but quickly realized that
+              routine desk work wasn’t where I thrived. That’s when I discovered{" "}
+              <span className="font-semibold text-gray-700">marketing</span>—the
+              perfect blend of creativity and strategy. I immersed myself in
+              learning, experimenting, and building, eventually helping multiple
+              brands grow, connect with their audience, and stand out in a
+              crowded space. Today, through{" "}
+              <span className="font-semibold text-gray-700">Socio Wright</span>,
+              I focus on turning ideas into impact and helping brands grow with
+              clarity and purpose.
+            </p>
 
             <div className="mt-8 flex items-center gap-4">
               <a
