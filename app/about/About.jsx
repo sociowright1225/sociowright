@@ -11,13 +11,16 @@ export default function AboutUs() {
           {/* Left Title */}
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-serif font-thin leading-snug">
             <TextType
-  text={["Socio Wright finds,", "shares, and inspires the little", "things that make life more beautiful.!"]}
-  typingSpeed={75}
-  pauseDuration={1500}
-  showCursor={true}
-  cursorCharacter="|"
-/>
-  
+              text={[
+                "Socio Wright finds,",
+                "shares, and inspires the little",
+                "things that make life more beautiful.!",
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </h1>
 
           {/* Right Text */}
@@ -76,7 +79,7 @@ export default function AboutUs() {
               {/* Paragraph Group 1 */}
               <div className="space-y-6">
                 <p>
-                  Creativity can come from everywhere. All it takes is a spark—a
+                  Creativity can come from everywhere. All it takes is a sparka
                   moment, and a way to bring it to life. We exist for the
                   creators making their mark in this new era of inspiration.
                 </p>
@@ -84,7 +87,7 @@ export default function AboutUs() {
                 <p>
                   These tools bring new possibilities, and Socio Wright brings
                   what’s next. Female-founded, design-driven, and inspired by
-                  real stories—Socio Wright blends lifestyle, creativity, and
+                  real storiesSocio Wright blends lifestyle, creativity, and
                   visual expression into a powerful platform for the modern
                   creator.
                 </p>
@@ -92,7 +95,7 @@ export default function AboutUs() {
                 <p>
                   These tools bring new possibilities, and Socio Wright brings
                   what’s next. Female-founded, design-driven, and inspired by
-                  real stories—Socio Wright blends lifestyle, creativity, and
+                  real storiesSocio Wright blends lifestyle, creativity, and
                   visual expression into a powerful platform for the modern
                   creator.
                 </p>
@@ -101,7 +104,7 @@ export default function AboutUs() {
               {/* Paragraph Group 2 */}
               <div className="space-y-6">
                 <p>
-                  Creativity can come from everywhere. All it takes is a spark—a
+                  Creativity can come from everywhere. All it takes is a sparka
                   moment, and a way to bring it to life. We exist for the
                   creators making their mark in this new era of inspiration.
                 </p>
@@ -109,7 +112,7 @@ export default function AboutUs() {
                 <p>
                   These tools bring new possibilities, and Socio Wright brings
                   what’s next. Female-founded, design-driven, and inspired by
-                  real stories—Socio Wright blends lifestyle, creativity, and
+                  real storiesSocio Wright blends lifestyle, creativity, and
                   visual expression into a powerful platform for the modern
                   creator.
                 </p>
@@ -117,7 +120,7 @@ export default function AboutUs() {
                 <p>
                   These tools bring new possibilities, and Socio Wright brings
                   what’s next. Female-founded, design-driven, and inspired by
-                  real stories—Socio Wright blends lifestyle, creativity, and
+                  real storiesSocio Wright blends lifestyle, creativity, and
                   visual expression into a powerful platform for the modern
                   creator.
                 </p>

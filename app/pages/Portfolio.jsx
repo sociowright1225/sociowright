@@ -13,14 +13,14 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export default function Portfolio() {
- const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
         const res = await fetch("/api/portfolio");
         const data = await res.json();
-        
+
         if (Array.isArray(data)) {
           const filteredProjects = data
             // 1. Sirf 'Interior Shoots' filter karein
@@ -29,7 +29,7 @@ export default function Portfolio() {
             .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
             // 3. Pehle 6 projects uthayein
             .slice(0, 6);
-          
+
           setProjects(filteredProjects);
         }
       } catch (error) {
@@ -49,11 +49,11 @@ export default function Portfolio() {
   // Navigation Logic
   const scrollPrev = useCallback(
     () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
+    [emblaApi],
   );
   const scrollNext = useCallback(
     () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
+    [emblaApi],
   );
 
   return (
@@ -73,7 +73,7 @@ export default function Portfolio() {
             </h2>
             <p className="text-gray-600 xl:w-3xl">
               We wear two hats. Alongside digital marketing, we offer
-              professional interior photography—documenting spaces with the same
+              professional interior photographydocumenting spaces with the same
               precision we apply to your growth strategy.
             </p>
           </div>
@@ -81,17 +81,26 @@ export default function Portfolio() {
           <div className="flex items-center gap-4">
             {/* Custom Navigation Buttons */}
             <div className="flex gap-2 mr-4">
-                <button onClick={scrollPrev} className="p-2 rounded-full border border-gray-300 hover:bg-black hover:text-white transition">
-                    <ChevronLeft size={20} />
-                </button>
-                <button onClick={scrollNext} className="p-2 rounded-full border border-gray-300 hover:bg-black hover:text-white transition">
-                    <ChevronRight size={20} />
-                </button>
+              <button
+                onClick={scrollPrev}
+                className="p-2 rounded-full border border-gray-300 hover:bg-black hover:text-white transition"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={scrollNext}
+                className="p-2 rounded-full border border-gray-300 hover:bg-black hover:text-white transition"
+              >
+                <ChevronRight size={20} />
+              </button>
             </div>
 
             <a href="/portfolio">
               <button className="relative group px-8 py-3 bg-red-500 shadow text-white rounded-full text-sm overflow-hidden transition">
-                <span className="relative z-10 uppercase font-bold"> portfolio</span>
+                <span className="relative z-10 uppercase font-bold">
+                  {" "}
+                  portfolio
+                </span>
                 <span className="absolute bottom-0 left-1/2 w-0 h-0 rounded-t-3xl bg-black transition-all duration-200 ease-out group-hover:w-full group-hover:h-full -translate-x-1/2"></span>
               </button>
             </a>
@@ -99,7 +108,10 @@ export default function Portfolio() {
         </div>
 
         {/* Embla Viewport */}
-        <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
+        <div
+          className="overflow-hidden cursor-grab active:cursor-grabbing"
+          ref={emblaRef}
+        >
           <div className="flex gap-6">
             {projects.map((item) => (
               <div
@@ -126,8 +138,10 @@ export default function Portfolio() {
                 </div>
                 {/* Title and location below for better visibility on mobile */}
                 <div className="mt-4 px-1">
-                   <h4 className="font-bold text-gray-800 uppercase text-sm">{item.title}</h4>
-                   <p className="text-xs text-gray-500">{item.location}</p>
+                  <h4 className="font-bold text-gray-800 uppercase text-sm">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-gray-500">{item.location}</p>
                 </div>
               </div>
             ))}

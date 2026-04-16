@@ -27,13 +27,9 @@ export default function Hero() {
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
-              "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
-            
-           
+          
           ]}
           variant={1}
         />
@@ -50,7 +46,7 @@ export default function Hero() {
       <p className="max-w-2xl mb-4 text-center">
         In a world of polished noise, authenticity wins. From bold social
         campaigns to precision-engineered funnels, we craft the digital presence
-        your brand deserves—bold, beautiful, and distinctively yours.
+        your brand deservesbold, beautiful, and distinctively yours.
       </p>
 
       <a

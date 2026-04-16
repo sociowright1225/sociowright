@@ -32,7 +32,7 @@ export const Hero = () => {
               My path wasn't a straight line. I explored Engineering and even
               the world of CA, but neither sparked the passion I was looking
               for. That changed when I discovered marketing. I cut my teeth as a
-              content creator with Raipur’s finest—the{" "}
+              content creator with Raipur’s finestthe{" "}
               <span className="font-semibold text-gray-700">
                 1857 community
               </span>{" "}
@@ -41,7 +41,7 @@ export const Hero = () => {
                 {" "}
                 Easy Communications
               </span>
-              —where I learned what truly drives engagement. I founded{" "}
+              where I learned what truly drives engagement. I founded{" "}
               <span className="font-semibold text-gray-700">
                 Socio Wright
               </span>{" "}
@@ -113,11 +113,11 @@ export const Hero = () => {
 
             <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
               My Journey I’ve always been drawn to{" "}
-              <span className="font-semibold text-gray-700">creativity</span> {" "}—
+              <span className="font-semibold text-gray-700">creativity</span>{" "}
               capturing moments, editing, and bringing ideas to life. After
               12th, I stepped into my family business, but quickly realized that
               routine desk work wasn’t where I thrived. That’s when I discovered{" "}
-              <span className="font-semibold text-gray-700">marketing</span>—the
+              <span className="font-semibold text-gray-700">marketing</span>the
               perfect blend of creativity and strategy. I immersed myself in
               learning, experimenting, and building, eventually helping multiple
               brands grow, connect with their audience, and stand out in a
