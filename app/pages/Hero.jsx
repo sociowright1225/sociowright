@@ -22,14 +22,17 @@ export default function Hero() {
       >
         <ImageTrail
           items={[
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
-          
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741797/DSC01139_skoj97.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741790/RCP09097_h4cnqj.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741789/DSC01147_jnjvpe.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741789/RCP09110_xiscal.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741786/DSC08933_bspjex.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741786/DSC09407_zxrq6j.jpg",
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741786/DSC08833_u22mjq.jpg",
+          "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741786/DSC00357_yjxq5r.jpg",
+          "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741784/DSC08835_esqtjh.jpg",
+          "https://res.cloudinary.com/dwdmczhsn/image/upload/v1776741784/4b55325a-4f0f-49cf-856f-3b6970e2f1fa_bdtnqy.jpg",
+        
           ]}
           variant={1}
         />

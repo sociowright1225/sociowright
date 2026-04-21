@@ -1,6 +1,13 @@
 "use client";
 import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-space-grotesk",
+});
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -12,7 +19,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full py-6 fixed top-0 z-[999] bg-transparent">
-      <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between max-lg:justify-center">
+      <nav className={`max-w-6xl mx-auto px-6 flex items-center justify-between max-lg:justify-center `}>
         {/* Desktop Left */}
         <div className="hidden md:flex items-center gap-10 text-xs tracking-widest">
           <a href="/" className="hover:opacity-60">HOME</a>
@@ -66,11 +73,11 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="flex flex-col gap-8">
-          <a href="/" className="text-4xl font-serif border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Home</a>
-          <a href="/about" className="text-4xl font-serif border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>About Us</a>
-          <a href="/portfolio" className="text-4xl font-serif border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Portfolio</a>
-          <a href="/contact" className="text-4xl font-serif border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Contact</a>
+        <div className={`flex flex-col gap-8 ${spaceGrotesk.className}`}>
+          <a href="/" className="text-4xl border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Home</a>
+          <a href="/about" className="text-4xl border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>About Us</a>
+          <a href="/portfolio" className="text-4xl border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Portfolio</a>
+          <a href="/contact" className="text-4xl border-b text-red-500 border-black/10 pb-2" onClick={() => setOpen(false)}>Contact</a>
         </div>
 
         {/* <div className="mt-auto pt-10">

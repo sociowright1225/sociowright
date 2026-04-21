@@ -29,7 +29,7 @@ useEffect(() => {
   className={`fixed bottom-0 w-full border-t border-gray-200 px-6 md:px-12 overflow-hidden transition-transform duration-0
   ${active ? "translate-y-0" : "translate-y-full"}`}
 >
-        <div className="w-full py-4 space-y-2 max-lg:space-y-8">
+        <div className="w-full py-4 space-y-1 max-lg:space-y-8">
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Contact</h3>
             <p>
@@ -61,19 +61,18 @@ useEffect(() => {
 
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Working Hours</h3>
-            <p>11AM to 7 PM Sunday closed </p>
+            <p>11 AM to 7 PM Sunday closed </p>
           </div>
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Location</h3>
-            <p className="w-md max-lg:pr-30 text-right max-lg:text-left">
+            <a href={"https://maps.app.goo.gl/6xkpNQHnkUhHQ8yU8"} className="w-md max-lg:pr-30 text-right max-lg:text-left">
               108, New Housing board complex, infront of shankar
               nagar chaupati, shankar nagar, Raipur (C.G){" "}
-            </p>
+            </a>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-200" />
+      
 
         {/* Huge background name */}
         <div className=" bottom-0 left-0 w-full pointer-events-none select-none">

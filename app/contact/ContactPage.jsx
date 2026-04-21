@@ -79,16 +79,17 @@ export default function ContactPage() {
             </div>
 
             {/* MAP */}
-            <div className="rounded-md overflow-hidden border border-gray-300">
-              <iframe
-                title="Google Map"
-                width="100%"
-                className="h-48 sm:h-56 md:h-64 lg:h-72"
-                loading="lazy"
-                allowFullScreen
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.9656647413017!2d81.6620357!3d21.2534394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd6f18802a1f%3A0xa2e540d8363f140f!2sShankar%20Nagar%2C%20Raipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin`}
-              />
-            </div>
+           <div className="rounded-md overflow-hidden border border-gray-300">
+  <iframe
+    title="Google Map"
+    width="100%"
+    className="h-48 sm:h-56 md:h-64 lg:h-72"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.752092193442!2d81.6618505!3d21.2536265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dddcd26b2ae7%3A0xdb2415d2da192943!2sSocio%20Wright!5e1!3m2!1sen!2sin!4v1776740666553!5m2!1sen!2sin"
+  />
+</div>
           </div>
 
           {/* LEFT: CONTACT FORM */}
