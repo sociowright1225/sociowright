@@ -17,7 +17,7 @@ export const Hero = () => {
           {/* Left Content */}
           <div className=" max-w-xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              I'am Chinmay, i help brands grow through <br />
+              I’m Chinmay, and I help brands grow through <br />
               <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
@@ -29,24 +29,9 @@ export const Hero = () => {
             </h1>
 
             <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-              My path wasn't a straight line. I explored Engineering and even
-              the world of CA, but neither sparked the passion I was looking
-              for. That changed when I discovered marketing. I cut my teeth as a
-              content creator with Raipur’s finestthe{" "}
-              <span className="font-semibold text-gray-700">
-                1857 community
-              </span>{" "}
-              and
-              <span className="font-semibold text-gray-700">
-                {" "}
-                Easy Communications
-              </span>
-              where I learned what truly drives engagement. I founded{" "}
-              <span className="font-semibold text-gray-700">
-                Socio Wright
-              </span>{" "}
-              to bring that clarity to you, with a singular goal: helping brands
-              stop guessing and start connecting with their primary audience.
+              My path wasn’t a straight line. I explored engineering and even the world of CA, but neither sparked the passion I was looking for. That changed when I discovered marketing. I cut my teeth as a content creator with Raipur’s finest 1857 community and Easy Communications where I learned what truly drives engagement.
+<br />
+I founded Socio Wright to bring that clarity to you, with a singular goal: helping brands stop guessing and start connecting with their primary audience
             </p>
 
             <div className="mt-8 flex items-center gap-4">
@@ -100,7 +85,7 @@ export const Hero = () => {
           {/* Left Content */}
           <div className=" max-w-xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-              I'am Krishna, and <br />
+              I’m Krishna, and <br />
               {/* <TextType
                 text={["Digital Marketing", "Interior Shoots", "Ad Films"]}
                 typingSpeed={75}
@@ -112,19 +97,11 @@ export const Hero = () => {
             </h1>
 
             <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-              My Journey I’ve always been drawn to{" "}
-              <span className="font-semibold text-gray-700">creativity</span>{" "}
-              capturing moments, editing, and bringing ideas to life. After
-              12th, I stepped into my family business, but quickly realized that
-              routine desk work wasn’t where I thrived. That’s when I discovered{" "}
-              <span className="font-semibold text-gray-700">marketing</span>the
-              perfect blend of creativity and strategy. I immersed myself in
-              learning, experimenting, and building, eventually helping multiple
-              brands grow, connect with their audience, and stand out in a
-              crowded space. Today, through{" "}
-              <span className="font-semibold text-gray-700">Socio Wright</span>,
-              I focus on turning ideas into impact and helping brands grow with
-              clarity and purpose.
+             I’ve always been drawn to creativity- capturing moments, editing, and bringing ideas to life. After 12th, I stepped into my family business, but quickly realized that routine desk work wasn’t where I thrived. That’s when I discovered marketing the perfect blend of creativity and strategy.
+<br />
+I immersed myself in learning, experimenting, and building, eventually helping multiple brands grow, connect with their audience, and stand out in a crowded space. 
+<br />
+Today, through Socio Wright, I focus on turning ideas into impact and helping brands grow with clarity and purpose.
             </p>
 
             <div className="mt-8 flex items-center gap-4">

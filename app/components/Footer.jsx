@@ -85,7 +85,7 @@ useEffect(() => {
 
         {/* Bottom bar */}
     <div className="relative pb-2 flex justify-between items-center max-lg:flex-col text-xs text-gray-500">
-  <p>© {new Date().getFullYear()} Socio Wright</p>
+  <p>© 2024 Socio Wright</p>
   <p>
     Designed & Developed by{" "}
     <a

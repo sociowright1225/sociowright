@@ -73,8 +73,8 @@ export default function Portfolio() {
             </h2>
             <p className="text-gray-600 xl:w-3xl">
               We wear two hats. Alongside digital marketing, we offer
-              professional interior photographydocumenting spaces with the same
-              precision we apply to your growth strategy.
+              professional interior photography, documenting spaces with the
+              same precision we apply to your growth strategy.
             </p>
           </div>
 

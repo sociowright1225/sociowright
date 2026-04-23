@@ -41,9 +41,7 @@ export default function FAQ() {
             [Frequently Asked Questions]
           </p>
           <p className="text-sm text-gray-600 leading-relaxed">
-            If you’re wondering about how I work, what gear I use, or what to
-            expect on a shoot this is where it starts. No jargon, no
-            overcomplication.
+            If you’re wondering how we work, what gear we use, or what to expect on a shoot, this is where it starts. No jargon, no overcomplication.
           </p>
         </div>
 
