@@ -24,7 +24,7 @@ export default function ContactPage() {
     const formData = new FormData(event.target);
 
     // Your Web3Forms Access Key
-    formData.append("access_key", "9694a1cc-0b1d-4a32-b360-688aca5759dd");
+    formData.append("access_key", "aad13991-898b-4136-9489-ec8442d63c0d");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
