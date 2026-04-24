@@ -37,10 +37,10 @@ export default function FAQ() {
       <div className="grid md:grid-cols-2 gap-16">
         {/* Left intro */}
         <div className="space-y-6 max-w-md">
-          <p className="text-xs uppercase tracking-widest text-gray-500">
+          <p className="text-xs lg:text-2xl uppercase tracking-widest text-gray-500">
             [Frequently Asked Questions]
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
             If you’re wondering how we work, what gear we use, or what to expect on a shoot, this is where it starts. No jargon, no overcomplication.
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function FAQ() {
                 className="w-full text-left py-6 flex gap-6 items-start group"
               >
                 {/* Number */}
-                <span className="text-sm text-gray-400 pt-1">
+                <span className="text-sm lg:text-2xl text-gray-400 pt-1">
                   {String(i + 1).padStart(2, "0")}
                 </span>
 
                 {/* Content */}
                 <div className="flex-1">
                   <div className="flex justify-between items-start gap-4">
-                    <h3 className="text-lg font-medium">{item.q}</h3>
+                    <h3 className="text-lg lg:text-xl font-medium">{item.q}</h3>
 
                     <span className="text-xl leading-none">
                       {isOpen ? "×" : "+"}
@@ -76,7 +76,7 @@ export default function FAQ() {
                       isOpen ? "grid-rows-[1fr] mt-4" : "grid-rows-[0fr]"
                     }`}
                   >
-                    <p className="overflow-hidden text-sm text-gray-600 leading-relaxed">
+                    <p className="overflow-hidden text-sm lg:text-base text-gray-600 leading-relaxed">
                       {item.a}
                     </p>
                   </div>

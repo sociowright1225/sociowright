@@ -11,45 +11,41 @@ const bebas = Bebas_Neue({
 export default function Footer() {
   const [active, setActive] = useState(false);
 
-useEffect(() => {
-  const onScroll = () => {
-    const scrollPosition = window.innerHeight + window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight;
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.documentElement.scrollHeight;
 
-    setActive(scrollPosition >= pageHeight - window.innerHeight * 0.3);
-  };
+      setActive(scrollPosition >= pageHeight - window.innerHeight * 0.3);
+    };
 
-  window.addEventListener("scroll", onScroll);
-  return () => window.removeEventListener("scroll", onScroll);
-}, []);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className="h-screen relative">
       <footer
-  className={`fixed bottom-0 w-full border-t border-gray-200 px-6 md:px-12 overflow-hidden transition-transform duration-0
-  ${active ? "translate-y-0" : "translate-y-full"}`}
->
+        className={`fixed bottom-0 w-full border-t border-gray-200 -z-10 px-6 md:px-12 overflow-hidden transition-transform duration-0
+`}
+      >
         <div className="w-full py-4 space-y-1 max-lg:space-y-8">
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Contact</h3>
             <p>
-  <a
-    href="tel:+918905022497"
-    className="hover:underline"
-  >
-    +91-8905022497
-  </a>
-  {", "}
-  <a
-    href="mailto:socio.wright@gmail.com"
-    className="hover:underline"
-  >
-    socio.wright@gmail.com
-  </a>
-</p>
-
+              <a href="tel:+918905022497" className="hover:underline">
+                +91-8905022497
+              </a>
+              {", "}
+              <a
+                href="mailto:socio.wright@gmail.com"
+                className="hover:underline"
+              >
+                socio.wright@gmail.com
+              </a>
+            </p>
           </div>
-          <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
+          {/* <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Social</h3>
             <p>
               <a href="https://www.instagram.com/sociowright.in?igsh=MXhoM3h1d3dmZm54MQ%3D%3D&utm_source=qr">
@@ -57,7 +53,7 @@ useEffect(() => {
               </a>
               , <a href="/">Linkedin</a>
             </p>
-          </div>
+          </div> */}
 
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Working Hours</h3>
@@ -65,14 +61,15 @@ useEffect(() => {
           </div>
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">
             <h3 className="text-3xl font-semibold uppercase">Location</h3>
-            <a href={"https://maps.app.goo.gl/6xkpNQHnkUhHQ8yU8"} className="w-md max-lg:pr-30 text-right max-lg:text-left">
-              108, New Housing board complex, infront of shankar
-              nagar chaupati, shankar nagar, Raipur (C.G){" "}
+            <a
+              href={"https://maps.app.goo.gl/6xkpNQHnkUhHQ8yU8"}
+              className="w-md max-lg:pr-30 text-right max-lg:text-left"
+            >
+              108, New Housing board complex, infront of shankar nagar chaupati,
+              shankar nagar, Raipur (C.G){" "}
             </a>
           </div>
         </div>
-
-      
 
         {/* Huge background name */}
         <div className=" bottom-0 left-0 w-full pointer-events-none select-none">
@@ -84,21 +81,20 @@ useEffect(() => {
         </div>
 
         {/* Bottom bar */}
-    <div className="relative pb-2 flex justify-between items-center max-lg:flex-col text-xs text-gray-500">
-  <p>© 2024 Socio Wright</p>
-  <p>
-    Designed & Developed by{" "}
-    <a
-      href="https://zerogravityweb.diginote.in"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-black underline"
-    >
-      zerogravityweb
-    </a>
-  </p>
-</div>
-
+        <div className="relative pb-2 flex justify-between items-center max-lg:flex-col text-xs text-gray-500">
+          <p>© 2024 Socio Wright</p>
+          <p>
+            Designed & Developed by{" "}
+            <a
+              href="https://zerogravityweb.diginote.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black underline"
+            >
+              zerogravityweb
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   );
