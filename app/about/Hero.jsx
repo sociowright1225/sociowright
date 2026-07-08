@@ -29,12 +29,17 @@ export const Hero = () => {
             </h1>
 
             <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-              My path wasn’t a straight line. I explored engineering and even the world of CA, but neither sparked the passion I was looking for. That changed when I discovered marketing. I cut my teeth as a content creator with Raipur’s finest 1857 community and Easy Communications where I learned what truly drives engagement.
-<br />
-I founded Socio Wright to bring that clarity to you, with a singular goal: helping brands stop guessing and start connecting with their primary audience
+              My path wasn’t a straight line. I explored engineering and even
+              the world of CA, but neither sparked the passion I was looking
+              for. That changed when I discovered marketing. I cut my teeth as a
+              content creator with Raipur’s finest 1857 community and Easy
+              Communications where I learned what truly drives engagement.
+              <br />I founded Socio Wright to bring that clarity to you, with a
+              singular goal: helping brands stop guessing and start connecting
+              with their primary audience
             </p>
 
-            <div className="mt-8 flex items-center gap-4">
+            {/* <div className="mt-8 flex items-center gap-4">
               <a
                 href="/portfolio"
                 className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
@@ -68,7 +73,7 @@ I founded Socio Wright to bring that clarity to you, with a singular goal: helpi
                   ></span>
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -97,14 +102,21 @@ I founded Socio Wright to bring that clarity to you, with a singular goal: helpi
             </h1>
 
             <p className="mt-6 text-gray-500 text-base max-lg:text-sm leading-relaxed">
-             I’ve always been drawn to creativity- capturing moments, editing, and bringing ideas to life. After 12th, I stepped into my family business, but quickly realized that routine desk work wasn’t where I thrived. That’s when I discovered marketing the perfect blend of creativity and strategy.
-<br />
-I immersed myself in learning, experimenting, and building, eventually helping multiple brands grow, connect with their audience, and stand out in a crowded space. 
-<br />
-Today, through Socio Wright, I focus on turning ideas into impact and helping brands grow with clarity and purpose.
+              I’ve always been drawn to creativity- capturing moments, editing,
+              and bringing ideas to life. After 12th, I stepped into my family
+              business, but quickly realized that routine desk work wasn’t where
+              I thrived. That’s when I discovered marketing the perfect blend of
+              creativity and strategy.
+              <br />
+              I immersed myself in learning, experimenting, and building,
+              eventually helping multiple brands grow, connect with their
+              audience, and stand out in a crowded space.
+              <br />
+              Today, through Socio Wright, I focus on turning ideas into impact
+              and helping brands grow with clarity and purpose.
             </p>
 
-            <div className="mt-8 flex items-center gap-4">
+            {/* <div className="mt-8 flex items-center gap-4">
               <a
                 href="/portfolio"
                 className=" bottom-20 max-lg:bottom-10 left-20 max-lg:left-10 z-50"
@@ -138,7 +150,7 @@ Today, through Socio Wright, I focus on turning ideas into impact and helping br
                   ></span>
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
           {/* Right Image */}
           <div className="relative max-lg:hidden">

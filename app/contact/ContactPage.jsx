@@ -49,13 +49,13 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="w-full justify-center items-center flex">
+    <section className="w-full justify-center pt-20 items-center flex">
       <div className="max-w-[1200px] w-full py-12 pt-24 px-4 sm:px-6 lg:px-16 text-gray-800">
         
         {/* HEADER / HERO */}
         <div className="relative h-28 md:h-36 w-full bg-cover bg-center rounded-2xl">
           <div className="relative z-10 flex flex-col text-center justify-center h-full px-4 sm:px-10 lg:px-16">
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide">
+            <h1 className="text-4xl pb-10 md:text-6xl font-extrabold tracking-wide">
               <BlurText
                 text="CONTACT US"
                 delay={250}
@@ -108,17 +108,17 @@ export default function ContactPage() {
             </div>
 
             {/* MAP */}
-            <div className="rounded-md overflow-hidden border border-gray-300">
-              <iframe
-                title="Google Map"
-                width="100%"
-                className="h-48 sm:h-56 md:h-64 lg:h-72"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.548981682855!2d81.65682897589332!3d21.24969248002677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd030635e985%3A0xc3467c69994c6533!2sShankar%20Nagar%20Chowpati!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
-              />
-            </div>
+          <div className="rounded-md overflow-hidden border border-gray-300">
+  <iframe
+    title="Google Map - Socio Wright"
+    width="100%"
+    className="h-48 sm:h-56 md:h-64 lg:h-72"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d806.1484561657262!2d81.6618505!3d21.2536265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dddcd26b2ae7%3A0xdb2415d2da192943!2sSocio%20Wright!5e1!3m2!1sen!2sin!4v1778173296737!5m2!1sen!2sin"
+  />
+</div>
           </div>
 
           {/* CONTACT FORM */}

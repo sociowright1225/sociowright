@@ -79,57 +79,77 @@ export default function VintageGallery() {
           </h2>
         </div>
 
-        {/* Navigation Buttons remain same */}
+        {/* Slider Wrapper with Navigation Buttons */}
 
-        {/* Slider Container */}
+        <div className="relative">
+          {/* Left Button */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-white shadow-md rounded-full p-2 md:p-3 border border-gray-200 transition-all hover:scale-105 -translate-x-2 md:-translate-x-4"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-[#2d2d2d]" />
+          </button>
 
-        <div
-          ref={scrollRef}
-          className="flex overflow-x-auto gap-4 md:gap-8 snap-x snap-mandatory scrollbar-hide pb-10"
-          style={{ scrollBehavior: "smooth" }}
-        >
-          {reelLinks.length > 0
-            ? reelLinks.map((reel, i) => {
-                // URL se extra parameters hatana
+          {/* Right Button */}
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-white shadow-md rounded-full p-2 md:p-3 border border-gray-200 transition-all hover:scale-105 translate-x-2 md:translate-x-4"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-[#2d2d2d]" />
+          </button>
 
-                const cleanUrl = reel.url.split("?")[0];
+          {/* Slider Container */}
 
-                return (
-                  <div
-                    key={reel._id || i}
-                    className="w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden"
-                  >
-                    {/* Container with overflow hidden and negative margin to hide extra details */}
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto gap-4 md:gap-8 snap-x snap-mandatory scrollbar-hide pb-10"
+            style={{ scrollBehavior: "smooth" }}
+          >
+            {reelLinks.length > 0
+              ? reelLinks.map((reel, i) => {
+                  // URL se extra parameters hatana
 
-                    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
-                      <blockquote
-                        className="instagram-media"
-                        data-instgrm-permalink={`${cleanUrl}?utm_source=ig_embed&amp;utm_campaign=loading`}
-                        data-instgrm-version="14"
-                        style={{
-                          width: "100%",
+                  const cleanUrl = reel.url.split("?")[0];
 
-                          margin: "0",
+                  return (
+                    <div
+                      key={reel._id || i}
+                      className="w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden"
+                    >
+                      {/* Container with overflow hidden and negative margin to hide extra details */}
 
-                          padding: "0",
+                      <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+                        <blockquote
+                          className="instagram-media"
+                          data-instgrm-permalink={`${cleanUrl}?utm_source=ig_embed&amp;utm_campaign=loading`}
+                          data-instgrm-version="14"
+                          style={{
+                            width: "100%",
 
-                          border: "none",
+                            margin: "0",
 
-                          // Isse extra padding aur details niche dab jayengi
+                            padding: "0",
 
-                          transform: "translateY(-10px)",
-                        }}
-                      ></blockquote>
+                            border: "none",
+
+                            // Isse extra padding aur details niche dab jayengi
+
+                            transform: "translateY(-10px)",
+                          }}
+                        ></blockquote>
+                      </div>
                     </div>
-                  </div>
-                );
-              })
-            : [1, 2, 3].map((n) => (
-                <div
-                  key={n}
-                  className="w-[300px] h-[500px] bg-gray-100 animate-pulse rounded-2xl shrink-0"
-                />
-              ))}
+                  );
+                })
+              : [1, 2, 3].map((n) => (
+                  <div
+                    key={n}
+                    className="w-[300px] h-[500px] bg-gray-100 animate-pulse rounded-2xl shrink-0"
+                  />
+                ))}
+          </div>
         </div>
 
         <script async src="https://www.instagram.com/embed.js"></script>
@@ -155,4 +175,4 @@ export default function VintageGallery() {
       </section>
     </div>
   );
-}
+} 

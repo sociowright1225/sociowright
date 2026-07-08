@@ -52,7 +52,7 @@ export default function Footer() {
                 Instagram
               </a>
               , <a href="/">Linkedin</a>
-            </p>
+            </p>                                                                                                                                                       
           </div> */}
 
           <div className="flex justify-between max-lg:justify-start max-lg:flex-col">

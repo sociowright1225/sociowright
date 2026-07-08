@@ -25,11 +25,9 @@ export default function Hero() {
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679490/hero8_jddvpo.jpg",
-            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773679847/hero1_jkiivx.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
-          
+            "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",          
           ]}
           variant={1}
         />
