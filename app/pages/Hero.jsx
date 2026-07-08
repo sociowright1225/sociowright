@@ -20,7 +20,7 @@ export default function Hero() {
           overflow: "hidden",
         }}
       >
-        <ImageTrail
+        {/* <ImageTrail
           items={[
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674397/hero11_prp3gc.jpg",
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674518/hero5_wamyth.jpg",
@@ -30,7 +30,7 @@ export default function Hero() {
             "https://res.cloudinary.com/dwdmczhsn/image/upload/v1773674678/hero3_asb5zz.jpg",          
           ]}
           variant={1}
-        />
+        /> */}
       </div>
       <h1 className="flex justify-center items-center">
         <BlurText

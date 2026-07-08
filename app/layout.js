@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import ScrollTop from "./components/ScrollTop";
 import Whatsapp from "./components/Whatsapp";
 import SmoothScrollProvider from "./components/SmoothScrollProvider";
+import CursorEffect from "./components/CursorEffect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F2F1EA]`}
       >
+        <CursorEffect />
         <SmoothScrollProvider>
           {" "}
           <Navbar />
