@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
 import './ImageTrail.css';
@@ -29,6 +29,21 @@ function getMouseDistance(p1, p2) {
   const dy = p1.y - p2.y;
   return Math.hypot(dx, dy);
 }
+
+// ---------- preload helper ----------
+function preloadImages(urls) {
+  const promises = urls.map(
+    url =>
+      new Promise(resolve => {
+        const img = new window.Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = resolve;
+      })
+  );
+  return Promise.all(promises);
+}
+// -------------------------------------
 
 class ImageItem {
   DOM = { el: null, inner: null };
@@ -1060,13 +1075,36 @@ const variantMap = {
 
 export default function ImageTrail({ items = [], variant = 1 }) {
   const containerRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
 
+  // Step 1: images ko background me preload karo (page load ke baad, taaki hero render block na ho)
   useEffect(() => {
-    if (!containerRef.current) return;
+    let cancelled = false;
 
+    const startPreload = () => {
+      preloadImages(items).then(() => {
+        if (!cancelled) setLoaded(true);
+      });
+    };
+
+    if (document.readyState === 'complete') {
+      startPreload();
+    } else {
+      window.addEventListener('load', startPreload);
+    }
+
+    return () => {
+      cancelled = true;
+      window.removeEventListener('load', startPreload);
+    };
+  }, [items]);
+
+  // Step 2: images preload hone ke BAAD hi GSAP trail class init karo
+  useEffect(() => {
+    if (!containerRef.current || !loaded) return;
     const Cls = variantMap[variant] || variantMap[1];
     new Cls(containerRef.current);
-  }, [variant, items]);
+  }, [variant, loaded]);
 
   return (
     <div className="content" ref={containerRef}>
